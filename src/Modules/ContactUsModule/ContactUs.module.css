@@ -1,0 +1,15 @@
+.salonWrapper{
+    padding: 26px 15px 0 ;
+    margin-bottom: 2rem;
+}
+.contactDiv{
+    border: 1px solid #D1D1D1;
+    cursor: pointer;
+}
+@media (max-width:600px){
+    .contactRow{
+        flex-wrap: wrap;
+        gap: 30px;
+        flex-direction: column-reverse;
+    }
+}

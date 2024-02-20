@@ -1,0 +1,267 @@
+.inputDesign {
+  max-width: calc(100% - 92px);
+}
+.downArrow span {
+  position: relative;
+  top: -3px;
+}
+.defaultBtn,
+.disabledBtn {
+  background: #44779d;
+  border-radius: 150px;
+  color: #fff;
+  width: 100%;
+  padding: 14px 0;
+  margin-top: 30px;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 150%;
+}
+.defaultBtn {
+  cursor: pointer;
+}
+.disabledBtn {
+  opacity: 0.5;
+  cursor: no-drop;
+}
+.phnInput :global(.form-control-lg) {
+  border: 1px solid #eee;
+  width: 100%;
+  padding: 15px 10px;
+  padding-left: 65px !important;
+  border-radius: 27px;
+  min-width: 350px;
+}
+.phnInput :global(.text-danger) {
+  color: #fe0303;
+}
+.phnInput :global(.react-tel-input .flag-dropdown) {
+  background: transparent;
+  border: none;
+  border-radius: 0px;
+  padding-left: 10px !important;
+}
+.phnInput :global(.selected-flag:hover) {
+  background: transparent !important;
+}
+.phnInput :global(.selected-flag:focus) {
+  background: transparent !important;
+}
+.phnInput :global(.search-box) {
+  width: calc(100% - 33px);
+}
+.phnInput :global(.text-danger:focus-visible) {
+  outline-color: #fe0303;
+  /* outline-width: 1px solid; */
+}
+.phnInput :global(.phone-control-custom) {
+  width: 100%;
+  height: auto;
+  padding: 10px;
+  z-index: auto;
+  padding-left: 65px;
+  border: 1px solid #eee;
+  border-radius: 30px;
+}
+.phnInput :global(.react-tel-input .flag-dropdown.open) {
+  background: transparent;
+  outline: none;
+}
+.phnInput :global(.flag-dropdown:focus-visible) {
+  outline: none;
+}
+.phnInput :global(.react-tel-input .flag-dropdown.open .selected-flag) {
+  background: transparent;
+}
+.phnInput :global(.react-tel-input .flag-dropdown) {
+  top: -5px;
+}
+.phnInput :global(.errorMessage) {
+  color: #fe0303;
+  font-size: 14px;
+}
+
+.phoneImg {
+  /* animation: spinloader 7s linear infinite; */
+}
+.groundBG {
+  /* background: linear-gradient(
+    to right,
+    theme("colors.primary") 0%,
+    theme("colors.primary") 50%,
+    #ffffff 50%,
+    #ffffff 100%
+  ); */
+  /* background: linear-gradient(to left, theme("colors.primary") 50%, #fff 100%); */
+}
+/* WebKit and Opera browsers */
+
+@keyframes spinloader {
+  0%,
+  50% {
+    transform: rotate(-10deg);
+  }
+
+  100% {
+    transform: rotate(10deg);
+  }
+}
+
+/* Arabic-translation */
+.arabicSignupForm :global(.react-tel-input .flag-dropdown) {
+  left: inherit;
+  right: 30px;
+}
+.arabicBorderLine {
+  border-left: 0;
+  border-right: 1px solid #d9d9d9;
+}
+
+.arabicSignupForm :global(.phone-control-custom) {
+  padding-left: 20px;
+  padding-right: 4rem !important;
+}
+.arabicSignupForm :global(.react-tel-input .selected-flag .arrow) {
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #555;
+}
+.arabicSignupForm :global(.react-tel-input .selected-flag .arrow.up) {
+  border-top: none;
+  border-bottom: 6px solid #555;
+}
+.arabicSignupForm :global(.react-tel-input .country-list .flag) {
+  margin-right: 0;
+  margin-top: 2px;
+  margin-left: 5px;
+}
+.arabicsignupFormWrapper {
+  border-left: unset;
+  border-right: 1px solid #d9d9d9;
+}
+.arabicSignupForm :global(.react-tel-input .country-list .country) {
+  text-align: right;
+}
+
+.groundBG {
+  background: linear-gradient(
+    to right,
+    theme("colors.primary") 0%,
+    theme("colors.primary") 50%,
+    #fff 50%,
+    #fff 100%
+  ) !important;
+}
+
+body.arabicFont .groundBG {
+  background: linear-gradient(
+    to left,
+    #133b6e 0%,
+    #133b6e 50%,
+    #fff 50%,
+    #fff 100%
+  ) !important;
+}
+
+.loginWrapper > article {
+  flex: 1;
+  padding: 0 20px;
+}
+/* Meida -query */
+
+@media (max-width: 1366px) {
+  .phoneImg {
+    /* height: 450px;
+    max-width: 450px; */
+  }
+}
+@media (max-width: 1199px) {
+  .loginWrapper {
+    gap: 30px;
+    overflow: hidden;
+  }
+}
+@media (max-width: 991px) {
+  .arabicsignupFormWrapper {
+    border-right: unset;
+  }
+  .loginWrapper {
+    flex-wrap: wrap;
+  }
+  .arabicBorderLine {
+    padding-right: 20px;
+    border: none;
+  }
+  .otpWRapper,
+  .signupFormWrapper {
+    max-width: 400px;
+    margin: 0 auto;
+    padding-top: 2rem !important;
+  }
+  .loginWrapper {
+    align-items: flex-start !important;
+  }
+}
+@media (max-width: 575px) {
+  .arabicBorderLine {
+    padding-right: 0px;
+  }
+}
+@media (max-width: 991px) {
+  .phoneImg {
+    height: 320px;
+    /* max-width: 320px; */
+  }
+  .groundBG {
+    background: #fff !important;
+  }
+  .phoneImg {
+    display: none;
+  }
+}
+@media (max-width: 704px) {
+  .img {
+    width: 250px;
+  }
+  .groundBG {
+    background: transparent;
+  }
+  .groundBG .phoneImg {
+    width: 100%;
+    max-width: 100%;
+    background: theme("colors.primary");
+  }
+  .groundBG {
+    padding: 0 0 0 0;
+  }
+  .loginWrapper {
+    padding: 0 0 0 0;
+  }
+  .phoneImg {
+    min-height: 300px;
+  }
+}
+
+@media screen and (width <= 485px) {
+  .phnInput :global(.form-control-lg) {
+    width: 100%;
+    min-width: auto;
+    padding: 10px;
+  }
+  .defaultBtn,
+  .disabledBtn {
+    width: 100%;
+    padding: 12px 0;
+    margin-top: 15px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 120%;
+  }
+  .loginWrapper {
+    flex-direction: column-reverse;
+  }
+  .arabicsignupFormWrapper {
+    padding-right: 0;
+    max-width: 85%;
+  }
+}

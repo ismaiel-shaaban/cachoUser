@@ -1,0 +1,71 @@
+.langBtn p {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #888888;
+  opacity: 0.9;
+
+  width: 100%;
+  text-align: left;
+  position: relative;
+}
+.langBtn {
+  width: 100%;
+  padding: 10px 20px 10px 79px;
+}
+.active p {
+  color: #44779d;
+}
+.active p::before {
+  position: absolute;
+  content: "";
+  width: 11px;
+  height: 7.62px;
+  border: 2px solid #44779d;
+  border-top-width: 0px;
+  border-right-width: 0px;
+  top: 3px;
+  left: -20px;
+  transform: rotate(310deg);
+}
+.upperBtn {
+  border-radius: 50%;
+}
+.upperBtn * {
+  border-radius: inherit;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Arabic-Translation */
+.arabicHeaderWrapper .profileBox{
+  gap: 18px;
+  margin-left: initial;
+  margin-right: 2rem;
+}
+.defaultNotification{background-color: #52A5FF;}
+.arabicHeaderWrapper .defaultNotification{
+  margin-left: initial;
+  justify-content: flex-end;
+}
+.arabicHeaderWrapper .defaultNotification span{
+  --tw-translate-x:0;
+}
+.arabicHeaderWrapper  .langBtn p{text-align: right;}
+.arabicHeaderWrapper .active p::before {
+    left: 0;
+    right: -20px;
+}
+.arabicHeaderWrapper .langBtn {
+    padding: 10px 50px 10px 20px;
+}
+/* .arabicMenuWrapper .serachBox{margin-right: 0;} */
+@media (max-width:480px){
+  .arabicMenuWrapper .locationAddress{
+    width: 200px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+
+}

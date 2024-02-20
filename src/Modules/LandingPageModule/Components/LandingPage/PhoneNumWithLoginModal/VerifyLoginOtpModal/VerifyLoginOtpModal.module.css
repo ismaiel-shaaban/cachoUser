@@ -1,0 +1,48 @@
+.otpBox input{
+    border: 1px solid #eee;
+    width: 63px !important;
+    padding: 15px 0px;
+    border-radius: 27px;
+    border: 1px solid #D1D1D1;
+    margin-right: 1rem;
+    color: #000;
+    font-weight: 600;
+}
+.otpBox input::placeholder{
+    font-weight: 400;
+}
+.otpBox{
+    max-width: 347px;
+    margin: 2rem auto 0;
+    display: block;
+}
+.defaultBtn , .disabledBtn{
+    background: #44779d;
+    border-radius:150px;
+    color:#fff;
+    width:100%;
+    padding:14px 0;
+    margin-top: 30px;
+    font-weight:500;
+    font-size:17px;
+    line-height:150%;
+}
+.defaultBtn{
+    cursor: pointer;
+}
+.crossBtn{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+@media screen and (width <= 485px) {
+    .defaultBtn , .disabledBtn{
+        width:100%;
+        padding:12px 0;
+        margin-top: 15px;
+        font-weight:500;
+        font-size:15px;
+        line-height:120%;
+    }
+}

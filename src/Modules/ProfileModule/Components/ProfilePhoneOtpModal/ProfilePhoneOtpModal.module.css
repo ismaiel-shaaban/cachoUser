@@ -1,0 +1,85 @@
+.otpWrapper {
+  padding: 15px;
+  background: #F1F6FC;
+
+}
+.centerAlign {
+  max-width: 400px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.otpBox input {
+  border: 1px solid #eee;
+  width: 56.405px !important;
+  height: 48.347px;
+  padding: 15px 0px;
+  border-radius: 27px;
+  border: 1px solid #d1d1d1;
+  margin-right: 10px !important;
+}
+.otpBox input:focus {
+  outline: 1px solid #52A5FF;
+}
+.otpBox input  {
+  margin-right: 12px !important;
+}
+.defaultBtn,
+.disabledBtn {
+  background: #133B6E;
+  border-radius: 150px;
+  color: #fff;
+  width: 100%;
+  padding: 14px 0;
+  margin-top: 30px;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 150%;
+}
+.defaultBtn {
+  cursor: pointer;
+}
+.disabledBtn {
+  cursor: pointer;
+}
+.crossBtn{
+  position: absolute;
+  right: 10px;
+  top: 0;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+@media (max-width:575px){
+  .otpBox :global(div){
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .otpBox :global(div input){
+    width: 50px !important;height: 45px;margin-right: 0 !important;
+  }
+}
+@media (max-width:480px){
+  .otpBox :global(div input){
+    width: 48px !important;height: 40px;margin-right: 0 !important;
+  }
+}
+@media (max-width:360px){
+.otpBox :global(div input){
+  width: 42px !important;height: 40px;margin-right: 0 !important;
+}
+}
+@media screen and (width <= 485px) {
+  .defaultBtn,
+  .disabledBtn {
+    width: 100%;
+    padding: 12px 0;
+    margin-top: 15px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 120%;
+  }
+}

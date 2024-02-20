@@ -1,0 +1,199 @@
+.salonWrapper {
+  padding: 26px 15px;
+}
+.salonProductDiv {
+  width: 100%;
+  max-width: 800px;
+  padding: 0 0 100px 0;
+}
+.photoBtn {
+  border: 1px solid #80A0C7;
+  border-radius: 100px;
+  color: #80A0C7;
+  padding: 13px 22px;
+}
+.photoBtn input {
+  display: none;
+}
+.signupForm :global(input) {
+  min-height: 52px;
+  border-radius: 30px;
+  border: 1px solid #d1d1d1;
+  font-size: 14px;
+  font-weight: 400;
+  background-color: transparent !important;
+  padding: 15px 45px 15px 25px;
+  padding-right: 45px !important;
+  /* width: 350px; */
+}
+
+.signupForm :global(label) {
+  font-size: 13px;
+  font-weight: 500;
+  /* margin-bottom: .5rem; */
+  display: block;
+  font-family: "Montserrat", sans-serif;
+}
+
+.signupForm :global(.InputText_aaaa__izqt8 input) {
+  max-width: 350px;
+  width: 100%;
+  padding: 14px 20px;
+  margin-top: 6px;
+}
+.signupForm :global(.InputText_errorMessage__3Fhxi:focus-visible) {
+  outline-color: #fe0303;
+}
+.signupForm :global(input):focus-visible {
+  outline: 1px solid #44779d;
+  border: 0;
+}
+.signupForm :global(.text-danger) {
+  color: #fe0303;
+}
+.signupForm :global(.react-tel-input .flag-dropdown) {
+  background: transparent;
+  border: none;
+  border-radius: 0px;
+  padding-left: 10px !important;
+}
+.signupForm :global(.react-tel-input) {
+  margin-top: 6px;
+}
+.signupForm :global(.selected-flag:hover) {
+  background: transparent !important;
+}
+.signupForm :global(.selected-flag:focus) {
+  background: transparent !important;
+}
+.signupForm :global(.search-box) {
+  width: calc(100% - 33px);
+}
+.signupForm :global(.text-danger:focus-visible) {
+  outline-color: #fe0303;
+  /* outline-width: 1px solid; */
+}
+.signupForm :global(.text-lightRed) {
+  color: #fe0303;
+  font-size: 14px;
+  /* outline-width: 1px solid; */
+}
+.editWrap {
+  padding-right: 20px;
+}
+.signupForm :global(.phone-control-custom) {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  padding: 10px;
+  z-index: auto;
+  /* padding-left: 50px; */
+  padding-left: 65px;
+  border: 1px solid #d1d1d1;
+  border-radius: 30px;
+}
+.signupForm :global(.react-tel-input .flag-dropdown.open) {
+  background: transparent;
+  outline: none;
+}
+.signupForm :global(.flag-dropdown:focus-visible) {
+  outline: none;
+}
+.signupForm :global(.react-tel-input .flag-dropdown.open .selected-flag) {
+  background: transparent;
+}
+.signupForm :global(.react-tel-input .flag-dropdown) {
+  /* top: -5px; */
+  left: -8px;
+}
+.signupForm :global(.errorMessage) {
+  color: #fe0303;
+  font-size: 14px;
+}
+.userIMage {
+  border-radius: 50%;
+}
+.userIMage * {
+  border-radius: inherit;
+}
+/* new custom checkbox */
+
+
+/* Arabic-translation */
+.arabiformInp .signupForm :global(.react-tel-input .flag-dropdown) {
+  left: inherit;
+  right: 30px;
+}
+.arabiformInp .signupForm :global(.phone-control-custom) {
+    padding-left: 20px;
+    padding-right: 4rem !important;
+}
+.arabiformInp .signupForm :global(.react-tel-input .selected-flag .arrow){
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 6px solid #555;
+}
+.arabiformInp .signupForm :global(.react-tel-input .selected-flag .arrow.up){
+  border-top: none;
+  border-bottom: 6px solid #555;
+}
+.arabiformInp .signupForm :global(.react-tel-input .country-list .flag){
+  margin-right: 0;
+  margin-top: 2px;
+  margin-left: 5px;
+}
+
+@media (max-width: 1026px) {
+  .termsPara {
+    padding-left: 0.2rem;
+  }
+  .signupForm .containerTerms {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 991px) {
+  .FormCustomRow {
+    flex-wrap: wrap;
+  }
+  .sliderLeftCol {
+    width: 100%;
+  }
+  .RightFormContent {
+    width: 100%;
+  }
+}
+
+@media (max-width: 575px) {
+  .signupForm :global(.flex) {
+    flex-direction: column;
+    margin: 0 0 0 0;
+  }
+  .signupForm :global(.col) {
+    margin: 0 0 10px 0;
+    padding: 0;
+  }
+  .checkmark {
+    width: 18px;
+    height: 18px;
+  }
+  .signupForm .containerTerms {
+    padding-left: 25px;
+  }
+  .termsParaContent {
+    padding-left: 0.2rem;
+  }
+  .termsPara {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 375px) {
+  .termsPara {
+    font-size: 11px;
+  }
+  .photoBtn {
+    padding: 5px 10px;
+    font-size: 12px;
+  }
+}

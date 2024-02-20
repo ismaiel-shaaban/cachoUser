@@ -1,0 +1,48 @@
+.msgerinputarea {
+    display: flex;
+    border-radius: 3px;
+    font-size: 1em;
+    border: 1px solid #E8E6EA;
+    border-radius: 10px;
+    /* / background: #FCFCFC; / */
+    overflow: hidden;
+    margin: 1rem;
+  }
+  .msgerinputarea textarea{
+    resize: none;
+    width: 100%;
+    border-radius: 5px;
+    min-height: 48px;
+    font-weight: 500;
+    font-size: 15px!important;
+    color: rgba(0,0,0,.5);
+    padding-top: 1.5rem;
+    padding-left: 1rem;
+  }
+  .msgerinput {
+    flex: 1;
+    resize: none;
+  }
+  .msgerinputarea textarea:focus{
+    outline: none;
+    box-shadow: unset;
+  }
+  
+  .msgersendbtn {
+    padding-right: 12px;
+    cursor: pointer;
+    background:white;
+    min-width: 25px;
+    padding-left: 10px;
+  }
+  .clickHere {
+    text-align: center;
+  }
+  .unbockText{cursor: pointer;}
+
+
+  /* Arabic-translation */
+  .arabicmMgerinputarea textarea{
+    padding-left: 0;
+    padding-right: 1rem;
+  }

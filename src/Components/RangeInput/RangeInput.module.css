@@ -1,0 +1,30 @@
+.borderRange {
+  border: none;
+  box-shadow: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: white;
+}
+.borderRange:global(.multi-range-slider-black .bar-left) {
+  border: 1px solid white;
+}
+.borderRange:global(.multi-range-slider-black .thumb::before) {
+  border: 1px solid white;
+}
+.borderRange:global(.multi-range-slider-black .bar-inner-left) {
+  border: 1px solid rgb(0, 74, 173);
+  background-color: rgb(0, 74, 173);
+}
+.borderRange:global(.multi-range-slider-black .bar-inner-right) {
+  border: 1px solid rgb(0, 74, 173);
+  background-color: rgb(0, 74, 173);
+}
+.borderRange:global(.multi-range-slider-black .bar-right) {
+  border: 1px solid white;
+}
+.borderRange:global(.multi-range-slider-black .thumb .caption *) {
+  background-color: white;
+  color: black;
+}

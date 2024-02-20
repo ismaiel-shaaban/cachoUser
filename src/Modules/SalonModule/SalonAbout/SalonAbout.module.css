@@ -1,0 +1,15 @@
+.salonAbout{
+    font-weight: 600;
+    font-size: 17px;
+}
+.salonAboutPara{
+    font-weight: 500;
+    font-size: 13px;
+    color:#979797
+}
+.salonReadMore{
+    color: #057E91;
+    display: contents;
+    font-weight: 500;
+    font-size: 13px;
+}

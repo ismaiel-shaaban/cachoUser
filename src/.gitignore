@@ -1,0 +1,10 @@
+/node_modules
+/.pnp,
+/.pnp.js
+
+/covrage
+
+/build
+
+/.next
+yarn.lock

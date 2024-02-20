@@ -1,0 +1,220 @@
+.ProductPictureView {
+  max-width: 800px;
+  width: 100%;
+  margin: 0px auto;
+  background: #ffffff;
+  padding: 15px 20px 70px 20px;
+  display: flex;
+  gap: 30px;
+}
+
+.chatbox {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 14px;
+  border-radius: 150px;
+  color: #fff;
+  max-width: 165px;
+}
+
+.Whatsappbox {
+  border: 1px solid #0c9466;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 14px;
+  border-radius: 150px;
+  color: #fff;
+  max-width: 165px;
+  background: var(--green-cyan, #0c9466);
+}
+
+.picturesViewDetail {
+  width: calc(100% - 364px);
+}
+
+.viewMore {
+  padding: 20px 0 60px 0;
+}
+.list:nth-child(odd) {
+  background: #fafafa;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.list:nth-child(even) {
+  background: unset !important;
+  padding: 10px;
+}
+.list p {
+  width: 200px;
+  text-transform: capitalize;
+}
+
+.list span {
+  width: calc(100% - 200px);
+  text-transform: capitalize;
+}
+
+/* slider -customization */
+.showPictures {
+  width: 364px;
+}
+
+.showPictures :global(.image-gallery-fullscreen-button) {
+  display: none;
+}
+
+.showPictures :global(.image-gallery-left-nav),
+.showPictures :global(.image-gallery-right-nav) {
+  padding: 0 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #44779d3d;
+}
+
+.showPictures :global(.image-gallery-left-nav .image-gallery-svg),
+.showPictures :global(.image-gallery-right-nav .image-gallery-svg) {
+  width: 40px;
+  height: 50px;
+}
+
+.showPictures :global(.image-gallery-slide) {
+  width: 364px;
+  height: 350px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.showPictures :global(.image-gallery-left-nav),
+.showPictures :global(.image-gallery-right-nav) {
+  background: linear-gradient(
+    90deg,
+    #ffffff42 -22.12%,
+    rgb(255 255 255 / 0%) 103.85%
+  ) !important;
+  padding: 0px 16px !important;
+  /* background: transparent !important; */
+}
+
+.showPictures :global(.image-gallery-svg) {
+  width: 24px !important;
+  height: 95px !important;
+  z-index: 2;
+  opacity: 1;
+}
+.showPictures :global(.image-gallery-slide .image-gallery-image) {
+  height: 100%;
+  object-fit: cover;
+}
+.showPictures
+  :global(.image-gallery-thumbnails-wrapper.thumbnails-swipe-horizontal) {
+  transform: translateY(-40px);
+}
+
+.showPictures :global(.image-gallery-thumbnails) {
+  overflow: unset;
+}
+
+.showPictures :global(.image-gallery-thumbnail .image-gallery-thumbnail-inner) {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.showPictures :global(.image-gallery-thumbnail.active),
+.showPictures :global(.image-gallery-thumbnail:hover),
+.showPictures :global(.image-gallery-thumbnail:focus) {
+  border: 2px solid transparent;
+  border-radius: 12px;
+}
+
+.showPictures :global(.image-gallery-thumbnail.active) {
+  box-shadow: 0px 1px 6px #52a5ff;
+  border: 2px solid #52a5ff;
+  border-radius: 12px;
+  transform: scale(1.23);
+}
+
+.showPictures :global(.image-gallery-thumbnail) {
+  width: 80px;
+  height: 70px;
+  border: 2px solid transparent;
+  transition: all 0.5s;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.showPictures :global(.image-gallery-thumbnail + .image-gallery-thumbnail) {
+  margin-left: 8px;
+}
+
+.showPictures :global(.image-gallery-thumbnail-image) {
+  height: 100%;
+  object-fit: cover;
+}
+
+.showPictures :global(.image-gallery-thumbnail span) {
+  object-fit: cover;
+  height: 100%;
+  max-height: calc(100vh - 0px) !important;
+}
+
+/* Arabic-translation */
+.arabicWrapperbox {
+  flex-direction: row-reverse;
+}
+
+@media (max-width: 855px) {
+  .ProductPictureView {
+    display: block;
+  }
+
+  .picturesViewDetail {
+    width: 100%;
+  }
+  .list p {
+    width: 200px;
+  }
+
+  .list span {
+    width: 100%;
+    text-align: right;
+  }
+}
+
+@media (max-width: 475px) {
+  .wrapperbox {
+    display: block;
+  }
+
+  .Whatsappbox {
+    max-width: 100%;
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  .chatbox {
+    max-width: 100%;
+    width: 100%;
+  }
+  .showPictures :global(.image-gallery-slide) {
+    width: 264px;
+    height: 250px;
+  }
+  .showPictures {
+    width: 264px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 385px) {
+  .list p {
+    width: 100%;
+  }
+
+  .list span {
+    width: 100%;
+  }
+}

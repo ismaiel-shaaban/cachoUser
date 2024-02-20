@@ -1,0 +1,33 @@
+.langBtn p {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  color: #888888;
+  opacity: 0.9;
+
+  width: 100%;
+  text-align: left;
+  position: relative;
+}
+.langBtn {
+  width: 100%;
+  padding: 15px 0px 15px 40px;
+}
+.active p {
+  color: #133b6e;
+}
+.active p::before {
+  position: absolute;
+  content: "";
+  width: 11px;
+  height: 7.62px;
+  border: 2px solid #133b6e;
+  border-top-width: 0px;
+  border-right-width: 0px;
+  top: 3px;
+  left: -20px;
+  transform: rotate(310deg);
+}
+.countryBtn:focus-visible {
+  outline: none;
+}

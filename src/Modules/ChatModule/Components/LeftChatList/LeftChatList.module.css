@@ -1,0 +1,126 @@
+.leftChatLayout {
+  width: 460px;
+  flex: 0 0 460px;
+  fill: var(--white, #fff);
+  filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.1));
+  border-radius: 8px;
+  background-color: #fff;
+  /* padding: 14px 12px; */
+}
+.searchBox {
+
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  background: #fcfcfc;
+  display: flex;
+  gap: 10px;
+  padding: 11px;
+  align-items: center;
+  margin: 10px 11px 0;
+}
+.imgSearch {
+  width: 18px;
+  display: grid;
+  place-items: center;
+}
+.searchInput {
+  width: calc(100% - 18px);
+  border: none;
+  box-shadow: none;
+  outline: none;
+}
+.titleMes {
+  margin: 10px 11px 0;
+}
+.imgUser {
+  width: 52px;
+  height: 52px;
+}
+.imgUser img {
+  width: 100%;
+  height: 100%;
+}
+.availableUser {
+  overflow-y: auto;
+  cursor: pointer;
+  max-height: 500px;
+  padding: 0 12px 14px 12px;
+
+}
+.availableUser :global(.infinite-scroll-component){
+  will-change: unset !important;
+} 
+.activeUser {
+  display: flex;
+  justify-content: space-between;
+}
+.user {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 22px 12px 12px;
+  margin: 14px 0;
+  align-items: center;
+}
+.leftUser {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.availableUser::-webkit-scrollbar {
+  width:5px;
+  height: 7px;
+}
+
+/* Track */
+.availableUser::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+.availableUser::-webkit-scrollbar-thumb {
+  background: #bdbdbd;
+}
+.count {
+  background-color: #44779d !important;
+  color: #fff;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 10px;
+  font-weight: 500;
+}
+.activeUser {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #e4eaf2;
+  border-radius: 8px;
+  padding: 12px 22px 12px 12px;
+  margin: 14px 0;
+}
+.rightUser h5 {
+  padding-bottom: 5px;
+}
+
+.fallbackMessage {
+  height: calc(100% - 100px);
+  display: grid;
+  place-items: center;
+  text-align: center;
+  color: #44779D;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+
+@media (max-width:575px){
+  .leftChatLayout {
+    width: 100%;
+    flex: 0 0 100%;
+  }
+}

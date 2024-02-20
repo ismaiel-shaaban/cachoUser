@@ -1,0 +1,92 @@
+
+.productDiscount{
+    display: flex;
+    margin-top: 13px;
+    font-weight: 400;
+    font-size: 10px;
+}
+.productDiscountImg{
+    width: 17px;
+    height: 17px;
+}
+.ratingDiv{
+    background: #0C9466;
+    display: flex;
+    width: 46.65px;
+    height: 28px;
+   align-items: center;
+    border-radius: 8px;
+}
+.ratingNo{
+   
+    color: #FFFFFF;}
+.line{
+    color:  #EDEDED;
+}
+.productTableMaindiv{
+    display: flex;
+  margin:15px 0px;
+    justify-content: space-between;
+}
+.salonDivBtn{
+    border-radius: 17.5px;
+}
+.checkFont{
+    color: #888888;
+}
+@media screen and (max-width:1078px) and (min-width:1039px){
+    .prdClass{
+        margin-left: 60px;
+    }
+}
+@media screen and (max-width:1038px) and (min-width:1029px){
+    .prdClass{
+        margin-left: 50px;
+    }
+}
+@media screen and (max-width:1028px) and (min-width:1025px){
+    .prdClass{
+        margin-left: 40px;
+    }
+}
+@media screen and (max-width:978px) and (min-width:769px){
+    .prdClass{
+        margin-left: 40px;
+    }
+}
+@media screen and (max-width:320px){
+    .ratingDiv{
+        width:50px;
+        border-radius: 10px;
+    }
+    .salonBlock{
+        width: 100%;
+        max-width: 600px;
+        margin-left: auto;
+    }
+    .prdSec{
+        display: block;
+    }
+}
+@media screen and (max-width:425px) and (min-width:321px){
+    .prdSec{
+        display: block;
+    }
+    .salonBlock{
+        width: 80%;
+    }
+    .ratingDiv{
+        width: 60px;
+        border-radius: 10px;
+    }
+    .prdClass{
+        margin-left: 140px;
+    }
+    
+}
+@media screen and (min-width:426px) and (max-width:768px) {
+    .salonBlock{
+        width: 60%;
+    }
+    
+}

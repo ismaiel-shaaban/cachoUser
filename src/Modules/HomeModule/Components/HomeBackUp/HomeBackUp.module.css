@@ -1,0 +1,7 @@
+.customCarousel :global(.react-multi-carousel-track) {
+  display: flex;
+}
+.customCarousel :global(.react-multi-carousel-item) {
+  justify-content: center;
+  display: flex;
+}

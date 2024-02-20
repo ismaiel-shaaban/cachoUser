@@ -1,0 +1,41 @@
+
+.allCategories{
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+    background: #FFFFFF;
+    padding: 30px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.leftarrowBlack{
+    cursor: pointer;
+}
+.smallText {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    height: 32px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+    width: 100%;
+    border-radius: 0px 0px 5px 5px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #393939 100%);
+    backdrop-filter: blur(2px);
+}
+.featuredCatRow{
+  cursor: pointer;
+}
+.placeholderImg{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    width: 100%;
+}

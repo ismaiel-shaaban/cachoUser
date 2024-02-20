@@ -1,0 +1,13 @@
+@media screen and (width <= 1200px) {
+  .work {
+    padding-top: 30px;
+  }
+  .work h1 {
+    font-size: 26px;
+    line-height: 35px;
+  }
+  .work .mainDiv {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}

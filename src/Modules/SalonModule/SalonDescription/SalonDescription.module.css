@@ -1,0 +1,81 @@
+.salonDescHead{
+    font-weight: 600;
+    font-size: 17px;
+    margin: 15px 18px;
+}
+.docDiv{
+    background: #cde5e9;
+    border-radius: 5px;
+    width: 189px;
+    height: 34px;
+    display: flex;
+    text-align: center;
+}
+.salonDescDiv{
+    display: flex;
+    margin: 15px 18px;
+
+}
+.docImg{
+    margin: 8px 10px;
+}
+.docSpan{
+    font-weight: 500;
+font-size: 13px;
+margin-top: 7px;
+}
+.downldImg{
+    margin-top: 4px;
+    margin-left: 15px;
+}
+.salonDescDetails{
+    display: flex;
+}
+/* .productDiv{
+    margin-top: 20px;
+} */
+.tabList{
+    border-bottom: 2px solid #C5C5C5;
+}
+.prodTab{
+    /* margin: 20px 42px 12px 24px; */
+    /* min-width: 175px; */
+    padding: 12px 24px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+    /* letter-spacing: 0.01em; */
+    color: #888888;
+    /* padding: 12px; */
+}
+.tabDesign button[aria-selected="true"] {
+    color: #44779d;
+    font-weight: 600;
+    position: relative;
+outline:none
+}
+
+.tabDesign button[aria-selected="true"]::after {
+    position: absolute;
+    content: "";
+    width: 80%;
+    height: 3px;
+    background: #44779d;
+    bottom: -2px;
+    left: 10px;
+    outline:none
+}
+.productTable{
+    display: flex;
+    flex-direction: column;
+}
+.line{
+    color:  #EDEDED;
+}
+@media screen and (max-width:426px){
+    .tabDesign button[aria-selected="true"]::after {
+        /* width: 80%; */
+        /* left: 10px; */
+        top: 40px;
+    }
+}

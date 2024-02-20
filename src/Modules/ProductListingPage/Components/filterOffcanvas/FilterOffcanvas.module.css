@@ -1,0 +1,350 @@
+.menuContent {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  z-index: 1045;
+  color: black;
+  background-color: #fff;
+  border-top-left-radius: 16px;
+  outline: 0;
+  transition: all 0.3s;
+  width: 497px;
+}
+
+.sidebarWrapper {
+  width: 497px;
+}
+
+.sidebarWrapper .canvasList button {
+  font-size: 14px;
+  font-weight: 400;
+  width: 100%;
+  padding-left: 20px;
+  text-align: left;
+  padding: 12px 0 12px 14px;
+  color: #3d3d3d;
+}
+
+.sidebarWrapper button[aria-selected="true"] {
+  font-weight: 600;
+  background-color: #fff;
+  color: #52a5ff;
+  /* outline: 1px solid var(--royal-purple, #52A5FF); */
+}
+
+.onOpen {
+  visibility: visible;
+  right: 0px;
+}
+
+.onClose {
+  visibility: hidden;
+  right: -300px;
+}
+
+.closeBtn {
+  font-size: 25px !important;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: #000;
+  margin: 10px;
+  position: absolute;
+  left: -100px;
+  background: #fff;
+  box-shadow: 0px 0px 0 6px #333;
+}
+
+.menuOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1040;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  transition: all 0.3s;
+}
+
+.canvasList {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+  width: 117px;
+  border-right: 1px solid #f1f6fc;
+  height: 100vh;
+  background-color: #f1f6fc;
+  border-top-left-radius: 16px;
+}
+
+.sideData {
+  width: calc(100% - 117px);
+  margin-top: 35px;
+}
+
+.offCanvas {
+  display: flex;
+  gap: 20px;
+  padding-right: 2rem;
+}
+.rangeSliderSec :global(.input-range) {
+  width: 90% !important;
+}
+
+.rangeSliderSec :global(.input-range__track--active) {
+  background: #52a5ff;
+}
+.rangeSliderSec :global(.input-range__slider) {
+  background: #52a5ff;
+  border: #52a5ff;
+}
+/* ================================Checkbox css=================== */
+.containers {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.containers input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  height: 20px;
+  width: 20px;
+  border: 1px solid #a6a6a6;
+}
+
+.containers:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.containers input:checked ~ .checkmark {
+  border: 1px solid #59a9ff;
+  background-color: #59a9ff;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.containers input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.containers .checkmark:after {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  border-radius: 50%;
+  width: 8px;
+  height: 8px;
+  /* border: solid #435368;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg); */
+}
+
+/* ================================Checkbox css=================== */
+/* ==================Range Slider===================== */
+.rangeSliderSec :global(.range-slider .range-slider__thumb) {
+  width: 18px !important;
+  height: 18px !important;
+}
+
+.rangeSliderSec :global(.range-slider) {
+  width: 60% !important;
+  height: 6px !important;
+}
+
+.rangeSliderSec {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
+}
+.applyBtn {
+  border-radius: 150px;
+  background: #133b6e;
+  color: #fff;
+  display: flex;
+  min-width: 305px;
+  width: 100%;
+  padding: 9px 103px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.buttonsWrapper {
+  position: absolute;
+  bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+.filterUpper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  border-bottom: 1px solid #dadada;
+}
+.resetBtn {
+  border: none;
+}
+/* ==================Range Slider===================== */
+/* ===========Rating=========== */
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* categoryData */
+.categoryData {
+  height: 75vh;
+  overflow-y: auto;
+}
+/* width */
+.offCanvas ::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+.offCanvas ::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.offCanvas ::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+.offCanvas ::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Arabic-Translation */
+.arabicSidebarWrapper .offCanvas {
+  padding-right: 0;
+  padding-left: 2rem;
+}
+.arabicsidebarMain .menuContent {
+  border-top-left-radius: 0;
+  border-top-right-radius: 16px;
+}
+.arabicsidebarMain .onOpen {
+  visibility: visible;
+  left: 0px;
+  right: inherit;
+}
+
+.arabicsidebarMain .onClose {
+  visibility: hidden;
+  left: -300px;
+  right: inherit;
+}
+.arabicRangeSliderSec :global(.input-range__track--active) {
+  left: 0 !important;
+}
+
+/* ===============================Media Querry============= */
+@media (max-width: 600px) {
+  .sidebarWrapper {
+    max-width: 90%;
+  }
+  .menuContent {
+    max-width: 90%;
+  }
+  .applyBtn {
+    min-width: 200px;
+    width: 100%;
+    padding: 9px 50px;
+  }
+  .offCanvas {
+    padding-right: 0;
+  }
+}
+@media (max-width: 575px) {
+  .buttonsWrapper {
+    position: absolute;
+    bottom: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 20px;
+    width: 100%;
+    left: 0;
+    transform: unset;
+    bottom: 0;
+    background: #fff;
+    padding: 1rem 0;
+    box-shadow: 0 0 1px;
+  }
+
+  .applyBtn {
+    min-width: initial;
+    width: 50%;
+    padding: 9px 5px;
+  }
+  .rangeSliderSec :global(.input-range) {
+    width: 90% !important;
+  }
+  .sideData {
+    width: calc(100% - 0px);
+  }
+  .canvasList {
+    width: 180px;
+  }
+  .arabicSidebarWrapper .offCanvas {
+    padding-right: 0;
+  }
+  .sidebarWrapper {
+    max-width: 100%;
+    width: 100%;
+  }
+  .arabicsidebarMain .menuContent {
+    border-top-right-radius: 0;
+  }
+  .menuContent {
+    width: 100%;
+    max-width: 100%;
+    border-top-left-radius: 0;
+  }
+  .arabicSidebarWrapper .sidebarWrapper {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 320px) {
+  .closeBtn {
+    position: absolute;
+    left: -60px !important;
+  }
+}
+/* ===============================Media Querry============= */

@@ -1,0 +1,82 @@
+.inputSelector {
+  display: flex;
+  justify-content: flex-start;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.option {
+  position: relative;
+}
+.option label {
+  display: block;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid currentColor;
+  color: #44779d;
+  font-size: 14px;
+  transition: al 0.2s ease-in-out;
+  cursor: pointer;
+  line-height: 150%;
+}
+.option input[type="radio"] {
+  transition: al 0.2s ease-in-out;
+  position: absolute;
+  left: -9999px;
+  visibility: hidden;
+  opacity: 0;
+}
+.option input[type="radio"]:checked + label {
+  color: #fff;
+  background: #44779d;
+  border-color: transparent;
+}
+.cardListing {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 40px;
+  margin-top: 32px;
+}
+.activeTab {
+  background-color: #133b6e;
+  /* min-width: 60px; */
+  padding: 10px 8px;
+  border-radius: 8px;
+  text-transform: capitalize;
+  color: #fff !important;
+  font-size: 14px;
+  font-weight: 400;
+}
+.inActiveTab {
+  border:1px solid var(--Menu-icon-color, #80A0C7);
+  padding: 10px 8px;
+  border-radius: 8px;
+  text-transform: capitalize;
+  color: #44779d;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.noProductFound {
+  min-height: 400px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+@media (max-width: 576px) {
+  .cardListing {
+    gap: 20px;
+  }
+  .option label {
+    padding: 8px;
+    font-size: 12px;
+    line-height: 1;
+  }
+}
+@media (max-width: 375px) {
+  .cardListing {
+    gap: 10px;
+  }
+}

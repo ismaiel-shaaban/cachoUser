@@ -1,0 +1,279 @@
+.vendorLayoutContainer {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 804px;
+}
+.VendorShopDetailsLayout {
+  background: #f1f6fc;
+}
+.wrapper {
+  background: #fff;
+  padding: 40px;
+}
+
+.videoSection * {
+  transition: all 0.6s ease-in-out;
+}
+
+/* vendor detail section */
+.vendorLayouDetailSection {
+  display: flex;
+  align-items: flex-start;
+}
+.vendorLayouDetailSection > div {
+  flex-shrink: 0;
+  display: flex;
+  width: 178px;
+  justify-content: center;
+  align-items: center;
+}
+.companyLogo {
+  position: relative;
+  z-index: 0;
+}
+.companyRating {
+  width: 100px;
+  bottom: -14px;
+  position: absolute;
+  background: #ef9d2e;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  gap: 6px;
+  padding: 6px;
+  font-weight: 600;
+  font-size: 14px;
+}
+/* .companyQR {
+  border-radius: 6px;
+  border: 1px solid #e4e4e4;
+  padding: 10px;
+} */
+.companyDetails {
+  flex-grow: 1;
+  padding: 0 40px;
+}
+.companyName {
+  color: #000;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 1.3;
+  margin-bottom: 10px;
+  line-height: 150%;
+}
+.activeTab {
+  background-color: #44779d;
+  /* min-width: 60px; */
+  padding: 10px 8px;
+  border-radius: 8px;
+  color: #fff !important;
+  font-size: 14px;
+  font-weight: 400;
+}
+.inActiveTab {
+  border: 1px solid #44779d;
+  padding: 10px 8px;
+  border-radius: 8px;
+  color: #44779d;
+  font-size: 14px;
+  font-weight: 400;
+}
+.actionBtn > span {
+  width: 50px;
+  height: 50px;
+  /* border-radius: 50%;
+  display: grid;
+  place-items: center; */
+  /* background: #44779d; */
+}
+.actionBtns {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 18px;
+}
+.actionBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 150%;
+  flex-direction: column;
+  gap: 6px;
+}
+.companyTitle {
+  color: #888;
+  font-size: 16px;
+  line-height: 150%;
+  text-transform: capitalize;
+}
+/* vendor detail section */
+
+/* tab section */
+.tabAreaSection {
+  margin: 40px -40px 0;
+}
+.tabList {
+  display: flex;
+  justify-content: flex-start;
+  gap: 24px;
+  border-bottom: 1px solid #ededed;
+  white-space: nowrap;
+  padding-left: 20px;
+  overflow-x: auto;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;
+}
+.tabList::-webkit-scrollbar {
+  display: none;
+}
+.tabListBtns {
+  color: #8c8c8c;
+  text-align: center;
+  font-size: 17px;
+  padding: 10px 10px 20px 10px;
+  transition: color 0.2s;
+  position: relative;
+  outline: none;
+}
+.tabListBtns::after {
+  content: "";
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 0;
+  position: absolute;
+  background: #133b6e;
+  height: 6.4px;
+  transition: all 0.2s ease-in-out;
+  border-radius: 6px 6px 0 0;
+  opacity: 0;
+  visibility: hidden;
+}
+.tabListBtns[data-headlessui-state="selected"] {
+  color: #133b6e;
+  font-weight: 600;
+}
+.tabListBtns[data-headlessui-state="selected"]::after {
+  width: 100%;
+  opacity: 1;
+  visibility: visible;
+}
+
+.tabPanels {
+  padding: 20px 0px;
+}
+.tabPanel {
+  padding: 0 20px;
+}
+.hours {
+  margin-bottom: 0px;
+  cursor: default;
+}
+.hoursDropDown {
+  margin-bottom: 0px;
+  cursor: pointer;
+}
+/* tab section */
+
+.toggleDropdown {
+  position: relative;
+  display: inline-block;
+  margin-left: 4px;
+}
+.dropdownMontent {
+  position: absolute;
+  background: #fff;
+  border-radius: 10px;
+}
+
+@media (max-width: 991px) {
+  .wrapper {
+    padding: 40px 20px;
+  }
+  .tabPanel {
+    padding: 0 0px;
+  }
+  .tabList {
+    padding-left: 0;
+  }
+  .tabAreaSection {
+    margin: 40px 0px 0;
+  }
+  .vendorLayouDetailSection {
+    padding: 20px 0px;
+  }
+  .vendorLayouDetailSection > div {
+    width: 150px;
+  }
+  .companyName {
+    font-size: 20px;
+    line-height: 1.3;
+    margin-bottom: 10px;
+  }
+  .companyTitle {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .companyDetails {
+    order: 3;
+    padding: 0 0px;
+  }
+  .vendorLayouDetailSection {
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+  .VendorShopDetailsLayout {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .wrapper {
+    padding: 40px 20px;
+  }
+  .tabListBtns {
+    font-size: 15px;
+    padding: 8px 8px 16px 8px;
+  }
+  .tabAreaSection {
+    margin: 20px 0px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .wrapper {
+    padding-left: 0;
+    padding-right: 0;
+    background: transparent;
+  }
+  .tabList {
+    gap: 12px;
+  }
+  .tabListBtns {
+    font-size: 14px;
+    padding: 8px 4px 12px 4px;
+  }
+  .vendorLayouDetailSection {
+    gap: 40px 20px;
+  }
+  .vendorLayouDetailSection > div {
+    width: 100px;
+  }
+  .companyRating {
+    width: 80px;
+    font-size: 10px;
+  }
+  .companyName {
+    font-size: 16px;
+    margin-bottom: 6px;
+  }
+  .companyTitle {
+    font-size: 13px;
+  }
+}

@@ -1,0 +1,10 @@
+.listColor {
+  background-color: #efefef;
+}
+.multiColor :global(.highlightOption) {
+  background: none !important;
+  color: #000 !important;
+}
+.multiColor :global(.highlightOption):hover {
+  background-color: #0096fb !important;
+}

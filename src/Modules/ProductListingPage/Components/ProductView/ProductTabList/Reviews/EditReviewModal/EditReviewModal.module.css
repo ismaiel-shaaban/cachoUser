@@ -1,0 +1,135 @@
+.customUpper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.rating{display: flex;gap: 10px;}
+.crossBtn{
+  font-size: 18px;
+  font-weight: 600;
+  color: #000;
+}
+.stars :global(.filled-icons) {
+  color: #EF9D2E  !important;
+}
+.stars :global(.star-svg) {
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+  /* fill: #44779d; */
+}
+/* reviewHeading */
+.reviewHeading{
+  color: var(--black, #000);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+}
+.borderBtm{
+  border-bottom: 1px solid #d3d3d3;
+}
+
+
+/* form-customization */
+.ProductDetailsForm :global(label){
+  text-align: left;
+  color: #000;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%; 
+  margin-bottom: 10px;
+  display: block;
+}
+.ProductDetailsForm :global(textarea){
+  min-height: 125px;
+  background-color: #fff;resize: none;padding: 1rem;font-size: 14px;border: 1px solid #D1D1D1;
+  color: #000;
+  font-weight: 500;
+}
+.ProductDetailsForm :global(textarea):focus{
+  outline: none;
+}
+.ProductDetailsForm :global(.errormessage){
+  font-size: 12px;
+  display: flex;
+  margin-right: auto;
+  justify-content: flex-start;
+  margin-bottom: 1rem;
+  position: relative;
+  color: #ff0000d1;
+}
+.ProductDetailsForm :global(.errorInput){
+display: none;
+}
+
+.ProductDetailsForm :global(textarea)::placeholder{color: #ccc;}
+
+/* form-builder -single-select-dropdown */
+.ProductDetailsForm :global(.multiSelectContainer)  {
+background-color: #fff;
+border-radius: 27px;
+border: 1px solid #D1D1D1;
+}
+.ProductDetailsForm :global(.searchWrapper){
+  border-radius: 4px;
+  min-height: 52px;
+  padding: 0;
+  position: relative;
+  border: unset;
+  padding-right: 0;
+}
+.ProductDetailsForm :global(.singleSelect){
+  background-image: url(../../../../../../../../public/images/downArrowBlack.png);
+  background-size: 14px 14px;
+  background-position:center right 10px;
+  background-repeat: no-repeat;
+  height: 14px;
+}
+.ProductDetailsForm :global(.multiSelectContainer input){
+  padding: 0;
+  margin-top: 0;
+  height: 52px;
+  width: 90%;
+  font-size: 15px;
+  
+}
+.ProductDetailsForm :global(.chip){
+  color: #000;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px; 
+  border-radius: unset;
+  margin-bottom: 0;
+  margin-right: 0;
+  padding: 10px 15px;
+  text-transform: capitalize;
+
+}
+.ProductDetailsForm :global(.singleSelect input){padding-left: 15px;}
+
+.ProductDetailsForm :global(.singleSelect img){display: none;}
+
+
+/* button */
+
+.buttonRow button{
+  width: 50%;
+  font-weight: 700;
+}
+
+/* Arabic-translation */
+.arabicWrapperbox{
+  flex-direction: row-reverse;
+}
+
+
+
+@media (max-width:575px) {
+  .ProductDetailsForm :global(.flex) {
+      flex-direction: column;
+  }
+  .buttonRow{flex-direction: row !important;}
+}

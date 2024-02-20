@@ -1,0 +1,220 @@
+.ProductListingPage {
+  max-width: 800px;
+  width: 100%;
+  margin: 0px auto;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 0 15px;
+}
+
+.buttonsWrap {
+  display: flex;
+  justify-content: flex-end !important;
+  align-items: center;
+  gap: 10px;
+  max-width: 800px;
+  width: 100%;
+}
+.descriptionProd {
+  max-width: 343px;
+  width: 100%;
+  white-space: normal;
+  word-break: break-word;
+  padding-right: 20px;
+}
+.btnFlex {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.15);
+  padding: 12px 24px 12px 24px;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.munuBtnCustom{
+  gap: 10px;
+  border-radius: 10px;
+  background: #fff;
+  padding: 8px 20px;
+  box-shadow: 0px 0px 13px 0px rgba(0, 0, 0, 0.15);
+  min-height: 48px;
+  min-width: 200px;
+  justify-content: space-around;
+}
+.dropdownCustom{
+  line-height: 2.8;
+  color: #3D3D3D;
+  text-align: center;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+}
+.btnFlex option{
+  padding: 2rem 0;
+}
+.sortBtn {
+  font-size: 14px;
+  font-weight: 500;
+  color: #44779d;
+}
+
+.filterBtn {
+  font-size: 14px;
+  font-weight: 500;
+  color: #797979;
+}
+
+.listing {
+  max-width: 800px;
+  width: 100%;
+  border-bottom: 1px solid #d7d7d7;
+}
+
+.ProductListing {
+  max-width: 800px;
+  width: 100%;
+  margin: 20px auto;
+  background: #ffffff;
+  padding: 20px 20px 70px 20px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  cursor: pointer;
+}
+
+.titleFour {
+  padding: 5px 0 20px 0;
+}
+
+.smallText {
+  font-weight: 600;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, #393939 100%);
+  backdrop-filter: blur(2px);
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  padding: 0.5rem 1rem;
+  font-size: 11px;
+  width: 100%;
+  text-align: center;
+}
+.leftDetail :global(figure){
+  height: 200px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.rightDetail {
+  max-width: 178px;
+  width: 100%;
+}
+
+.titleProd {
+  width: calc(100% - 30px);
+}
+
+.chatbox {
+  border: 1px solid #80A0C7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4px 55px;
+  border-radius: 10px;
+}
+
+.Whatsappbox {
+  border: 1px solid #0C9466;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px 10px;
+  border-radius: 10px;
+}
+
+.Whatsappbox span {
+  color: #0C9466;
+}
+
+.list p {
+  width: 150px;
+}
+
+.list span {
+  width: calc(100% - 150px);
+}
+.modal {
+  height: 550px;
+  width: 600px;
+}
+
+.placeholderImg{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  width: 100%;
+}
+
+/*  Arabic-translation*/
+.arabicChatRow button{flex-direction: row-reverse;}
+
+@media (max-width: 767px) {
+  .listing {
+    display: block;
+  }
+
+  .leftDetail {
+    width: 100%;
+  }
+
+  .rightDetail {
+    max-width: 100%;
+    margin-top: 20px;
+  }
+  .smallText {
+    bottom: 10px;
+  }
+}
+
+@media (max-width: 515px) {
+  .leftDetail {
+    display: block;
+  }
+
+  .leftDetail .profileListingImage {
+    display: block;
+    margin: 0px auto 20px auto;
+    width: 150px;
+    height: 150px;
+  }
+
+  .smallText {
+    position: absolute;
+    font-weight: 600;
+    font-size: 15px;
+    color: #fff;
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .list p {
+    width: 100%;
+  }
+
+  .list span {
+    width: 100%;
+    text-align: right;
+  }
+}
+@media (max-width:480px){
+  .dropdownMenu{left: 0;right: auto;}
+  .buttonsWrap {flex-wrap: wrap;justify-content: flex-start !important;}
+
+}

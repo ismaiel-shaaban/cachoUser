@@ -1,0 +1,8 @@
+.deleteBtn{display: grid;place-items: center;}
+.cancelBtn{
+    border: 1px solid #44779d;
+}
+.buttonRow button{width: 50%;transition: all .5s;}
+.buttonRow button:hover{
+    transform: translateY(-7px)
+}

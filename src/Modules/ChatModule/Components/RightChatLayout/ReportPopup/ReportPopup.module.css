@@ -1,0 +1,93 @@
+.formWrapBox {
+  padding: 0 27px;
+}
+.reportWrapper {
+  padding: 20px 0 25px;
+}
+.text {
+  padding: 13px 0 5px 0;
+}
+.centerAlign .imgWrap {
+  display: block;
+  margin: 0 auto;
+}
+.selectForm :global(.bg-powderblue) {
+  background-color: unset !important;
+}
+.buttonWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.formWrapBox :global(textarea){
+  resize: none;
+  font-size: 15px;
+  padding: 10px;
+}
+.formWrapBox :global(.errormessage){
+  font-size: 12px;
+  position: absolute;
+  left: 31px;
+  color: #ff0000b5;
+}
+.buttonWrapper button {
+  max-width: 275px;
+  width: 100%;
+}
+.cancelBtn {
+  border: 1px solid #80A0C7;
+  color: #44779d;
+  padding: 10px;
+  border-radius: 100px;
+}
+.formWrapBox label {
+  font-weight: 500;
+  text-align: left !important;
+  display: block;
+  padding-bottom: 10px;
+  font-size: 13px;
+  font-family: "Montserrat", sans-serif !important;
+  color: #000;
+}
+.formWrapBox :global(.searchWrapper) {
+  border: 1px solid #ccc;
+  border-radius: 27px !important;
+  min-height: 54px;
+  padding: 5px;
+  position: relative;
+  background-image: url(../../../../../../public/images/downIcon.png);
+  background-repeat: no-repeat;
+  background-position: center right 9px;
+}
+.formWrapBox :global(.icon_down_dir) {
+  display: none;
+}
+.formWrapBox :global(.singleChip) {
+  font-size: 15px;
+}
+.formWrapBox :global(.singleChip),
+.formWrapBox :global(.multiSelectContainer input) {
+  background: transparent;
+  border: none;
+  margin-top: 5px;
+  margin-left: 10px;
+  color: #000;
+}
+.formWrapBox :global(.InputMultiSelect_listColor__J6HNk) {
+  background-color: unset;
+}
+.formWrapBox :global(.bg-eyeColor) {
+  border: 1px solid #d1d1d6;
+  background-color: unset;
+}
+.cross {
+  cursor: pointer;
+  color: #000;
+}
+
+@media (max-width:375px){
+  .buttonWrapper button {
+    font-size: 14px;
+}
+}

@@ -1,0 +1,24 @@
+.deleteWrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-direction: column;
+}
+.wrapButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  max-width: 314px;
+  width: 100%;
+}
+.noBtn {
+  border: 1px solid #44779d;
+  color: #44779d;
+}
+.titleDel {
+  max-width: 280px;
+  width: 100%;
+  padding: 0px 40px;
+}

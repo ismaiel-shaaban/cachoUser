@@ -1,0 +1,158 @@
+
+.crossBtn{
+    position: absolute;
+    top: 10px;
+    right: 24px;
+}
+  .defaultBtn,
+  .disabledBtn {
+    background: #44779d;
+    border-radius: 150px;
+    color: #fff;
+    width: 100%;
+    padding: 14px 0;
+    margin-top: 30px;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 150%;
+  }
+  .defaultBtn {
+    cursor: pointer;
+  }
+  .disabledBtn {
+    opacity: 0.5;
+    cursor: no-drop;
+  }
+
+  .phnInput :global(.form-control-lg) {
+    border: 1px solid #eee;
+    width: 100%;
+    padding: 15px 10px;
+    padding-left: 65px !important;
+    border-radius: 27px;
+    min-width: 350px;
+  }
+  .phnInput :global(label){
+    color: #000;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 150%; /* 18px */
+    letter-spacing: 1.02px;
+  }
+  .phnInput :global(.text-danger) {
+    color: #fe0303;
+  }
+  .phnInput :global(.react-tel-input .flag-dropdown) {
+    background: transparent;
+    border: none;
+    border-radius: 0px;
+    padding-left: 10px !important;
+  }
+  .phnInput :global(.selected-flag:hover) {
+    background: transparent !important;
+  }
+  .phnInput :global(.selected-flag:focus) {
+    background: transparent !important;
+  }
+  .phnInput :global(.search-box) {
+    width: calc(100% - 33px);
+  }
+  .phnInput :global(.text-danger:focus-visible) {
+    outline-color: #fe0303;
+    /* outline-width: 1px solid; */
+  }
+  .phnInput :global(.phone-control-custom) {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    z-index: auto;
+    padding-left:65px;
+    border: 1px solid #eee;
+    border-radius: 30px;
+  }
+  .phnInput :global(.react-tel-input .flag-dropdown.open) {
+    background: transparent;
+    outline: none;
+  }
+  .phnInput :global(.flag-dropdown:focus-visible) {
+    outline: none;
+  }
+  .phnInput :global(.react-tel-input .flag-dropdown.open .selected-flag) {
+    background: transparent;
+  }
+  .phnInput :global(.react-tel-input .flag-dropdown) {
+    top: -5px;
+  }
+  .phnInput :global(.errorMessage) {
+    color: #fe0303;
+    font-size: 14px;
+  }
+  
+  .phoneImg{
+    animation: spinloader 7s linear infinite ;
+  }
+  
+  /* WebKit and Opera browsers */ 
+  
+  
+  @keyframes spinloader {
+    0%,50% {
+        transform: rotate(-10deg);
+    }
+  
+    100% {
+        transform: rotate(10deg);
+    }
+  }
+  
+  
+  /* Arabic-translation */
+  .arabicSignupForm .phnInput :global(label){
+    text-align: right;
+    display: block;
+    margin-bottom: .2rem;
+  }
+  .arabicSignupForm :global(.react-tel-input .flag-dropdown) {
+    left: inherit;
+    right: 30px;
+  }
+  .arabicSignupForm :global(.phone-control-custom) {
+      padding-left: 20px;
+      padding-right: 4rem !important;
+  }
+  .arabicSignupForm :global(.react-tel-input .selected-flag .arrow){
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 6px solid #555;
+  }
+  .arabicSignupForm :global(.react-tel-input .selected-flag .arrow.up){
+    border-top: none;
+    border-bottom: 6px solid #555;
+  }
+  .arabicSignupForm :global(.react-tel-input .country-list .flag){
+    margin-right: 0;
+    margin-top: 2px;
+    margin-left: 5px;
+  }
+  .arabicSignupForm :global(.react-tel-input .country-list){
+    right: 0;
+  }
+  
+  @media screen and (width <= 485px) {
+    .phnInput :global(.form-control-lg) {
+      width: 100%;
+      min-width: auto;
+      padding: 10px;
+    }
+    .defaultBtn,
+    .disabledBtn {
+      width: 100%;
+      padding: 12px 0;
+      margin-top: 15px;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 120%;
+    }
+  }

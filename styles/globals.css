@@ -1,0 +1,171 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"); */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  /* font-family: "montserrat"; */
+  /* font-family: "arabicFont"; */
+  /* font-family: "Montserrat", sans-serif; */
+}
+.englishFont {
+  font-family: "englishFont";
+}
+
+.arabicFont {
+  font-family: "calibryFont";
+}
+
+@font-face {
+  font-family: "calibryFont";
+  src: url("../public/fonts/alfont_com.ttf");
+  font-weight: normal;
+  font-display: swap;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "englishFont";
+  src: url("../public/fonts/OPTITimes-Roman.otf");
+  font-weight: normal;
+  font-display: swap;
+  font-style: normal;
+}
+
+body {
+  /* font-family: "Montserrat", sans-serif; */
+  word-break: break-word;
+  background: #f0f2f5;
+}
+body.arabicFont .groundBG {
+  background: linear-gradient(
+    to left,
+    #133b6e 0%,
+    #133b6e 50%,
+    #fff 50%,
+    #fff 100%
+  ) !important;
+}
+.main-container {
+  max-width: 1166px;
+  padding: 0 10px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.react-tel-input .flag-dropdown {
+  border-top-left-radius: 30px !important;
+  border-bottom-left-radius: 30px !important;
+}
+
+.react-tel-input .selected-flag {
+  /* outline: 1px solid #ccc !important; */
+  border-top-left-radius: 30px !important;
+  border-bottom-left-radius: 30px !important;
+  padding-left: 1rem !important;
+  width: 50px !important;
+}
+
+.react-tel-input .flag-dropdown.open .selected-flag {
+  padding-left: 1rem !important;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 6px;
+}
+::-webkit-scrollbar {
+  width: 0px; /* Width of the scrollbar */
+}
+/* Track */
+::-webkit-scrollbar-thumb {
+  background-color: transparent; /* Transparent background for the thumb */
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent; /* Transparent background for the track */
+  height: 1px; /* Set the height of the track */
+}
+
+/* Video-player-customization */
+.playVdo.video-react {
+  height: 300px;
+}
+.playVdo.video-react .video-react-big-play-button {
+  display: block;
+  background-image: url(../public/images/vdoPlayBtn.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 70px !important;
+  height: 70px !important;
+  border-radius: 30px;
+  border: unset;
+}
+.playVdo.video-react .video-react-big-play-button:before {
+  content: "" !important;
+}
+
+.pandDoc {
+  width: 100%;
+  height: 100vh;
+}
+/*Custom-toast*/
+.customToast h5 {
+  letter-spacing: 0.6px;
+  font-weight: 600;
+}
+
+.customToast h6 {
+  color: #000;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+  line-height: 1.5;
+}
+@media screen and (width <=485px) {
+  .main-container {
+    max-width: 470px;
+    width: 100%;
+  }
+}
+
+@media screen and (width <=768px) {
+  .main-container {
+    max-width: 700px;
+    width: 100%;
+  }
+}
+
+@media screen and (width <=991px) {
+  .main-container {
+    max-width: 950px;
+    width: 100%;
+  }
+}
+
+@media screen and (width <=1199px) {
+  .main-container {
+    max-width: 1150px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 991px) {
+  body.arabicFont .groundBG {
+    background: #fff !important;
+  }
+}
+
+.Toastify__toast {
+  font-family: "Montserrat", sans-serif !important;
+}
+
+.Toastify__close-button {
+  align-self: center !important;
+  color: #fff !important;
+  opacity: 1 !important;
+}
+ul,
+li {
+  list-style: none;
+}

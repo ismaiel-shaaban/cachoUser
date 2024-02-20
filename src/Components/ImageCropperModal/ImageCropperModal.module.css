@@ -1,0 +1,49 @@
+.imageCropperModal :global(.modal-body) {
+  padding: 20px 20px 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.imageCropperModal :global(.modal-body > *) {
+  width: 100%;
+}
+
+.imageCropperModal :global(.modal-body *) {
+  line-height: 1;
+}
+
+.imageCropperModal :global(.modal-content) {
+  border-radius: 10px;
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.imageCropperModal :global(.modal-body h3) {
+  font-size: 20px;
+}
+
+.modalFooter {
+  margin-top: 2rem;
+}
+
+.modalFooter button {
+  background-color: #004aad;
+  color: #fff;
+  font-size: 14px;
+  padding: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  min-width: 160px;
+  float: initial !important;
+  position: relative;
+  z-index: 9;
+}
+
+@media screen and (max-width: 575px) {
+  .imageCropperModal :global(.modal-body h3) {
+    font-size: 15px;
+  }
+}

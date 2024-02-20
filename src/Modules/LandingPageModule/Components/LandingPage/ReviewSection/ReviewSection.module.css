@@ -1,0 +1,8 @@
+@media screen and (width <= 991px) {
+  .leftside {
+    max-width: 100%;
+    text-align: center;
+  }
+}
+@media screen {
+}

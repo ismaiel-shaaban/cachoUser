@@ -1,0 +1,56 @@
+.copyLinkIcon span {
+  top: 4px;
+}
+
+.content {
+  max-width: 505px !important;
+}
+.content :global(.css-ln6nzq > *:not(style) ~ *:not(style)) {
+  margin-left: 19px !important;
+}
+.closeShare {
+  font-size: 15px;
+  line-height: 22px;
+  color: #757577;
+}
+.socialIcon :global(.react-share__ShareButton img) {
+  cursor: pointer;
+}
+.socialIcon button{margin-right: 18px;}
+.socialIcon button:last-child{margin-right: 0;}
+
+.copyLinkUrl{
+  font-style: italic;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: rgb(29, 137, 195);
+  cursor: pointer;
+}
+.copyLink{
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -ms-flex-align: flex-start;
+  align-items: flex-start;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  padding: 14px 15px;
+  background-color: #F4F4F4;
+  box-shadow: inset 0px 5px 13px rgba(0,0,0, 0.05);
+  border-radius: 5px;
+  margin-top: 15px;
+  font-size: 12px;
+}
+@media screen and (481px <= width <= 505px) {
+  .content :global(.css-k1oax2) {
+    width: 72% !important;
+  }
+}

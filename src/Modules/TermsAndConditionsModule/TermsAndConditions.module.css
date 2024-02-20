@@ -1,0 +1,14 @@
+.salonWrapper {
+  padding: 26px 15px;
+}
+.aboutPara {
+  font-size: 15px;
+}
+.textWrapper p,
+.textWrapper h3 {
+  text-align: right;
+}
+.pandDoc {
+  width: 100%;
+  height: 100vh;
+}

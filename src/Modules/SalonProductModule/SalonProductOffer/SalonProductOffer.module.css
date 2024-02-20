@@ -1,0 +1,20 @@
+.discRoundDiv{
+    background-image: url("../../../../public/images/newImages3/offerBg.png");
+    position: relative;
+    z-index: 1;
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: contain;
+    max-width: 180px;
+    padding: 8px 0;
+}
+.discImg{
+    background: #c1dfd5;
+    border-radius: 100%;
+}
+@media screen and (max-width:426px) {
+    .discRoundDiv{
+    padding: 5px 0;
+    }
+    
+}

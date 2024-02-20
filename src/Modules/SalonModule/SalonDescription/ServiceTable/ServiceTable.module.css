@@ -1,0 +1,68 @@
+.productTableDiv{
+    display: flex;
+}
+.productTableDiv{
+    display: flex;
+}
+.shave{
+    font-weight: 600;
+    font-size: 18px;
+
+}
+.productDetails{
+    margin-left: 14.95px;
+    width: 138.07px;
+height: 94px;
+}
+.shaveDollar{
+    font-weight: 600;
+    font-size: 20px;
+    color: #44779D;
+    margin-top: 8px;
+}
+.productDiscount{
+    display: flex;
+    margin-top: 13px;
+    font-weight: 400;
+    font-size: 10px;
+}
+.productDiscountImg{
+    width: 17px;
+    height: 17px;
+}
+.productDiscountOffer{
+    margin-left: 7px;
+}
+.ratingDiv{
+    background: #0C9466;
+    display: flex;
+    width: 46.65px;
+    height: 28px;
+   align-items: center;
+    border-radius: 8px;
+}
+.ratingNo{
+    font-weight: 600;
+    font-size: 13px;
+    color: #FFFFFF;
+    margin-left: 5px;
+}
+.ratingStarImg{
+    margin-left: 4px;
+    margin-bottom: 2.65px;
+    width: 12.63px;
+    height: 12px;
+}
+.line{
+    color:  #EDEDED;
+}
+.productTableMaindiv{
+    display: flex;
+    margin: 15px 18px;
+    justify-content: space-between;
+}
+@media screen and (max-width:426px){
+    .productTableMaindiv{
+      margin:0px;
+    }
+}

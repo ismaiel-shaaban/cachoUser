@@ -1,0 +1,27 @@
+.cardListing {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 40px;
+  margin-top: 32px;
+}
+
+.noActiveOffers {
+  min-height: 400px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+@media (max-width: 576px) {
+  .cardListing {
+    gap: 20px;
+    margin-top: 0;
+  }
+}
+@media (max-width: 375px) {
+  .cardListing {
+    gap: 10px;
+  }
+}

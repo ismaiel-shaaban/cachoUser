@@ -1,0 +1,19 @@
+.customUpper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #d3d3d3;
+  padding-bottom: 12px;
+}
+.pointer {
+  cursor: pointer;
+}
+.list:nth-child(odd) {
+  background: #fafafa;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.list:nth-child(even) {
+  background: unset !important;
+  padding: 10px;
+}

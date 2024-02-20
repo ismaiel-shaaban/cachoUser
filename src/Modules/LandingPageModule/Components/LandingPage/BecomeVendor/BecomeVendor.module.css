@@ -1,0 +1,20 @@
+.viewBtn {
+  background: linear-gradient(92.42deg, #0c9466 0%, #44779d 100%);
+  box-shadow: 0px 10px 35px rgba(9, 80, 115, 0.3);
+  border-radius: 0px 30px;
+  margin-top: 41px;
+}
+@media screen and (width <= 1166px) {
+  .vendor {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .vendorSideImage {
+    display: none;
+  }
+}
+@media screen and (769px <= width <= 991px) {
+  .sideDiv {
+    max-width: calc(100% - 450px);
+  }
+}

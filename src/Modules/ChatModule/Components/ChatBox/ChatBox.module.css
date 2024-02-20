@@ -1,0 +1,29 @@
+/* .chatbox {
+  background-color: #f4f5f9;
+} */
+.containerChat {
+  max-width: 1167px;
+  width: 100%;
+  margin: 0 auto 1rem;
+  padding: 0 15px;
+}
+.flexChat {
+  display: flex;
+  gap: 14px;
+  height: calc(100vh - 140px);  
+  overflow: hidden;
+
+}
+.mainHeading {
+  font-size: 18px;
+  font-weight: 800;
+  color: #000;
+padding: 21px 0 12px 0;
+}
+
+@media (max-width: 800px) {
+  .flexChat {
+    flex-direction: column;
+    height: inherit;
+  }
+}

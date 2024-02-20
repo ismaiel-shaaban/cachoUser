@@ -1,0 +1,281 @@
+/* ==============Right Chat Layout============= */
+.rightChatLayout {
+    flex-grow: 1;
+    fill: var(--white, #fff);
+    filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.1));
+    border-radius: 8px;
+    width: calc(100% - 460px);
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    background-color: #fff;
+  }
+  .rightPart {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+  }
+  .msgerheader {
+    display: flex;
+    justify-content: space-between;
+    color: #666;
+    padding: 22px 15px 15px;
+    border-bottom: 1px solid #e3ebf1;
+  }
+  .starReview {
+    background-color: #f4f5f9;
+    padding: 17px;
+    border-radius: 12px;
+  }
+  .profileBox {
+    flex: 0 0 60px;
+  }
+  .rightUserInfo {
+    width: calc(100% - 60px);
+  }
+  .rightUserInfo h5 {
+    color: var(--black, #14172e);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px;
+  }
+  .rightUserInfo h6 {
+    color: #888;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
+  .msgerchat {
+    flex: 1;
+    overflow-y: auto;
+    padding: 10px;
+  }
+  .msgerchat::-webkit-scrollbar {
+    width: 6px;
+  }
+  .msgerchat::-webkit-scrollbar-track {
+    background: #ddd;
+  }
+  .msgerchat::-webkit-scrollbar-thumb {
+    background: #bdbdbd;
+  }
+  .msg {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 20px;
+  }
+  .msg:last-of-type {
+    margin: 0;
+  }
+  .msgimg {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    background: #ddd;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+  }
+  .msgbubble {
+    max-width: 600px;
+    padding: 15px 12px;
+    border-radius: 15px;
+    background: #ececec;
+    border-radius: 0px 12px 12px 12px;
+  }
+  .msgbubble h3 {
+    color: #252525;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+  }
+  .msginfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .rightmsg {
+    flex-direction: row-reverse;
+  }
+  .rightmsg .msgbubble {
+    background: #e4eaf2;
+    color: #252525;
+  }
+  .rightMsgbubble {
+    border-radius: 12px 0px 12px 12px;
+    background-color: #F1F6FC;
+  }
+  .rightmsg .msg-img {
+    margin: 0 0 0 10px;
+  }
+  
+  .msgerinputarea {
+    display: flex;
+    border-radius: 3px;
+    font-size: 1em;
+    border: 1px solid #e8e6ea;
+    border-radius: 10px;
+    background: #fcfcfc;
+    overflow: hidden;
+    margin: 1rem;
+  }
+  .msgerinputarea textarea {
+    resize: none;
+    width: 100%;
+    border-radius: 5px;
+    min-height: 48px;
+    font-weight: 500;
+    font-size: 15px !important;
+    color: rgba(0, 0, 0, 0.5);
+    padding-top: 1.5rem;
+    padding-left: 1rem;
+    text-transform: capitalize;
+  }
+  .msgerinput {
+    flex: 1;
+    resize: none;
+  }
+  .msgerinputarea textarea:focus {
+    outline: none;
+    box-shadow: unset;
+  }
+  
+  .msgersendbtn {
+    padding-right: 12px;
+    cursor: pointer;
+    background: white;
+    min-width: 25px;
+    padding-left: 10px;
+  }
+  
+  .msgwrapper {
+    display: flex;
+    gap: 7px;
+  }
+  .rightmsgwrapper svg {
+    margin-left: auto;
+    margin-top: 5px;
+  }
+  .stars :global(.filled-icons) {
+    color: #44779d !important;
+  }
+  .stars :global(.star-svg) {
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    /* fill: #44779d; */
+  }
+  
+  .hoverPart {
+    position: relative;
+  }
+  
+  .trippleImg {
+    background-color: unset;
+    border: none;
+  }
+  .hoverTripleDot {
+    position: absolute;
+    background: #fff;
+    border-radius: 8px;
+    padding: 10px;
+    transition: all 0.3s ease-out;
+    opacity: 0;
+    width: 100%;
+    min-width: 150px;
+    right: 25px;
+    top: -20px;
+    visibility: hidden;
+  }
+  .hoverTripleDot li {
+    border-bottom: 1px solid #f2f2f2;
+    padding: 10px 0;
+  }
+  .hoverTripleDot li:last-child {
+    border-bottom: none;
+  }
+  .hoverTripleDot li a {
+    font-weight: 400;
+    font-size: 15px;
+    color: #3d3d3d;
+    cursor: pointer;
+  }
+  
+  .hoverPart:hover .hoverTripleDot {
+    opacity: 1;
+    width: 100%;
+    visibility: visible;
+  }
+  
+  .msgerinputarea {
+    display: flex;
+    border-radius: 3px;
+    font-size: 1em;
+    border: 1px solid #E8E6EA;
+    border-radius: 10px;
+    /* / background: #FCFCFC; / */
+    overflow: hidden;
+    margin: 1rem;
+  }
+  .msgerinputarea textarea{
+    resize: none;
+    width: 100%;
+    border-radius: 5px;
+    min-height: 48px;
+    font-weight: 500;
+    font-size: 15px!important;
+    color: rgba(0,0,0,.5);
+    padding-top: 1.5rem;
+    padding-left: 1rem;
+    text-transform: capitalize;
+  }
+  .msgerinput {
+    flex: 1;
+    resize: none;
+  }
+  .msgerinputarea textarea:focus{
+    outline: none;
+    box-shadow: unset;
+  }
+  
+  .msgersendbtn {
+    padding-right: 12px;
+    cursor: pointer;
+    background:white;
+    min-width: 25px;
+    padding-left: 10px;
+  }
+  
+  /* ==============Right Chat Layout============= */
+  @media (max-width: 800px) {
+    .rightChatLayout {
+      display: block;
+      width: 100%;
+    }
+  }
+  @media (max-width: 425px) {
+    .rightUserInfo h5 {
+      font-size: 14px;
+    }
+    .rightUserInfo h6 {
+      font-size: 13px;
+    }
+    .stars :global(.star-svg) {
+      width: 18px;
+      height: 18px;
+    }
+    .starReview {
+      padding: 9px;
+    }
+    .msgerheader {
+      padding: 22px 5px 15px;
+    }
+  }
+  

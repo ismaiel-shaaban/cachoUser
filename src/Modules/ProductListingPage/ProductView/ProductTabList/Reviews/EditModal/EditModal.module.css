@@ -1,0 +1,80 @@
+.customUpper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+  padding-left: 27px;
+  padding-right: 27px;
+}
+.stars {
+  display: flex;
+  align-items: center;
+  border-top: 1px solid #d3d3d3;
+  padding: 10px 0;
+  padding-left: 27px;
+  padding-right: 27px;
+}
+.formWrapBox {
+  padding: 0 27px;
+}
+.stars :global(.filled-icons) {
+  color: #44779d !important;
+}
+.stars :global(.star-svg) {
+  display: inline-block;
+  width: 26px;
+  height: 26px;
+}
+.selectForm :global(.bg-powderblue) {
+  background-color: unset !important;
+}
+.buttonWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.buttonWrapper button {
+  max-width: 275px;
+  width: 100%;
+}
+.cancelBtn {
+  border: 1px solid #44779d;
+  color: #44779d;
+  padding: 10px;
+  border-radius: 100px;
+}
+.editReviewForm label {
+  font-weight: 500;
+  text-align: left !important;
+  display: block;
+  padding-bottom: 10px;
+  font-size: 13px;
+}
+.formWrapBox :global(.searchWrapper) {
+  border: 1px solid #ccc;
+  border-radius: 27px !important;
+  min-height: 54px;
+  padding: 5px;
+  position: relative;
+}
+.formWrapBox :global(.multiSelectContainer input) {
+  background: transparent;
+  border: none;
+  margin-top: 10px;
+}
+/* .formWrapBox :global(.icon_down_dir) {
+  background-image: url("/public/images/selectDrop.svg") !important;
+  appearance: none;
+} */
+.formWrapBox :global(.InputMultiSelect_listColor__J6HNk) {
+  background-color: unset;
+}
+.formWrapBox :global(.bg-eyeColor) {
+  border: 1px solid #d1d1d6;
+  background-color: unset;
+}
+.cross {
+  cursor: pointer;
+  color: #000;
+}

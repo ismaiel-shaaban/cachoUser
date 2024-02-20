@@ -1,0 +1,61 @@
+.tabSection{
+    max-width: 800px;
+    width: 100%;
+    margin: 20px auto;
+    padding: 0 44px;
+}
+
+.tabSection button[aria-selected="true"] {
+    text-align: center;
+    font-size: 17px;
+    padding: 10px 10px 20px 10px;
+    transition: color 0.2s;
+    position: relative;
+    outline: none;
+    font-weight: 600;
+    color: #133B6E;
+}
+
+.tabSection button[aria-selected="true"]::after {
+    content: "";
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 0;
+    position: absolute;
+    background: #133B6E;
+    height: 7px;
+    transition: all 0.2s ease-in-out;
+    border-radius: 6px 6px 0 0;
+    opacity: 0;
+    visibility: hidden;
+
+}
+.tabSection button[data-headlessui-state="selected"]::after {
+    width: 100%;
+    opacity: 1;
+    visibility: visible;
+}
+.tabSection [data-headlessui-state="selected"]:focus-visible, .tabSection{outline: unset;}
+.tabList{
+    display: flex;
+    justify-content: flex-start;
+    gap: 24px;
+    border-bottom: 1px solid #ededed;
+    white-space: nowrap;
+    overflow-x: auto;
+}
+.tabList button{
+    padding: 10px 10px 20px 10px;
+}
+.tabList::-webkit-scrollbar { 
+    display: none !important; 
+ }
+@media (max-width:475px) {
+    .tabList{
+        white-space: nowrap;
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+}

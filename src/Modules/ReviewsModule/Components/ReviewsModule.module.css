@@ -1,0 +1,58 @@
+.salonWrapper{
+    padding: 26px 15px 0;
+}
+.salonProductDiv{
+    width: 100%;
+    max-width: 800px;
+}
+.hairCutDiv{
+    color: #fff;
+    padding: 6px 10px;
+
+}
+.reviewStarDiv{
+    max-width: 129px;
+}
+.reviewLoc{
+    border-left: 1px solid #C7C7C7;
+    height: 20px;
+}
+.reviewMainDiv{
+    border-bottom: 1px dotted #C5C5C5;
+}
+.reviewEdit{
+    max-width: 18px;
+}
+.reviewStarDiv :global(.filled-icons){
+   fill: #EF9D2E;
+   color: #EF9D2E !important;
+}
+.reviewStarDiv :global(span svg){
+    display: inline-block !important;
+}
+.editbtn{width: 146px;}
+
+.leftheading{width: calc(100% - 146px);}
+.noReviewfound{
+    text-align: center;
+    min-height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+/* Arabic-translation */
+.arabicLeftheading .hairCutDiv{
+    margin-left: 0;
+    margin-right: 12px;
+}
+.arabicEditbtn .reviewEdit{margin-left: 5px;}
+.arabicEditbtn{width: 154px;}
+
+
+@media (max-width:480px){
+.leftheading{width: auto;}
+
+}

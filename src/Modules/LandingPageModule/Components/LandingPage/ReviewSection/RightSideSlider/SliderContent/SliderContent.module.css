@@ -1,0 +1,6 @@
+.starImages span:not(:first-child) {
+  margin-left: 5px !important;
+}
+.reviewHeading {
+  width: calc(100% - 56px);
+}

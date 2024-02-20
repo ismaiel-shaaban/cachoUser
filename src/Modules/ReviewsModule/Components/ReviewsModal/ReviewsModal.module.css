@@ -1,0 +1,13 @@
+.reviewRateBtn{
+    padding: 14px 42px;
+    font-weight: 500;
+    font-size: 15px;
+    border-radius: 150px;
+}
+.textAreaCss{
+    border: 1px solid #D1D1D1;
+}
+.textAreaCss:focus-visible{
+    outline: 1px solid #D1D1D1;
+}
+

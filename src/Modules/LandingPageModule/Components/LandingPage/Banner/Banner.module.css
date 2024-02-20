@@ -1,0 +1,73 @@
+.customSlider :global(.react-multiple-carousel__arrow--left:before) {
+    content: "" !important;
+    background-repeat: no-repeat;
+    height: 17px;
+    background-position: center;
+    background-image: url("../../../../../../public/images/leftArrow.svg");
+}
+
+.customSlider :global(.react-multiple-carousel__arrow--right::before:before) {
+    background-image: url("../../../../../../public/images/rightArrow.svg");
+    content: "" !important;
+    background-repeat: no-repeat;
+    height: 17px;
+    background-position: center;
+}
+
+.customSlider :global(.carousel .control-arrow,
+.carousel.carousel-slider .control-arrow) {
+    opacity: initial;
+}
+
+.customSlider :global(.react-multiple-carousel__arrow--right) {
+    right: 20px;
+}
+
+.customSlider :global(.react-multiple-carousel__arrow--left) {
+    left: 20px;
+}
+
+.customSlider :global(.react-multiple-carousel__arrow) {
+    border-radius: 6px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    z-index: 1;
+}
+.customSlider :global(.react-multi-carousel-track .react-multi-carousel-item) {
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+@media (min-width:481px) {
+    .customSlider :global(.react-multi-carousel-dot-list) {
+        display: none;
+    }
+}
+
+@media (max-width:1024px){
+    .customSlider .heroImg {
+       width: auto !important;
+    }
+}
+@media (max-width:575px) {
+    .heroImg {
+        height: 300px !important;
+    }
+}
+@media (max-width:480px) {
+    .heroImg {
+        height: 250px !important;
+    }
+    
+    .customSlider :global(.react-multiple-carousel__arrow) {
+        display: none;
+    }
+    .customSlider :global(.react-multi-carousel-dot--active button) {
+        background: #44779d;
+    }
+}
+@media (max-width:425px) {
+    .heroImg {
+        height: 200px !important;
+    }
+}

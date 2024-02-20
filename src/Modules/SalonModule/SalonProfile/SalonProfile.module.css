@@ -1,0 +1,209 @@
+.salonWrapper{
+    background-color: #f0f2f5;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 26px 15px 0;
+}
+.mainDiv{
+    background-color: white;
+    max-width: 800px;
+
+}
+.profileDiv{
+    display: flex;
+    justify-content: center;
+    padding: 4px 18px;
+
+}
+.profileStar{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.profileStarSpan{
+        margin-left: 290px;
+}
+.profileParaMainDiv{
+    display: flex;
+    flex-direction: column;
+     margin: 15px 18px;
+}
+.profilePara{
+
+ font-weight: 700;
+ font-size: 24px;
+}
+.starSpanDiv{
+    background: #0C9466;
+    border-radius: 12px 12px 0px 0px;
+    display: flex;
+}
+.divSpan{
+    color: white;
+    width: 20px;
+    font-weight: 600;
+    font-size: 13px;
+    margin-top: 7px;
+    margin-left: 6px;
+}
+
+.reviewDiv{
+
+  border: 1px solid #C5C5C5;
+  border-radius: 0px 0px  12px 12px;
+  height: 33px;
+}
+.reviewNo{
+    margin: 3px 8px 4px 8px;
+}
+.reviewPara{
+    margin-top: 3px;
+    font-weight: 600;
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.reviews{
+    font-weight: 500;
+    font-size: 8px;
+}
+.profileSalondiv{
+    margin-top: 8px;
+}
+.profileSalonMainDiv{
+    display: flex;
+    flex-direction: column;
+}
+.profileSalon{
+    font-weight: 400;
+    font-size: 13px;
+    margin-left: 12px;
+
+}
+.profileSalonPara{
+    font-weight: 400;
+    font-size: 13px;
+    margin-left: 12px;
+}
+
+.profileSalonHead{
+font-weight: 400;
+font-size: 13px;
+margin-left: 12px;
+}
+.salonTimeDiv{
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+}
+.salonTimePara{
+    font-weight: bold;
+    margin-top: 12px;
+}
+.profileSalonLocation{
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+
+}
+.salonLocationSpan{
+    margin-left: 12px;
+    font-weight: 400;
+    font-size: 13px;
+}
+.profileStarMaindiv{
+    /* max-width: 50%; */
+    margin: 15px 18px;
+}
+.directionBtn{
+    filter: drop-shadow(0px 4px 6px rgba(8, 3, 3, 0.25));
+    background-color: #44779D;
+    border:1px solid #44779D;
+    border-radius: 150px;
+    display: flex;
+    margin-right: 20px;
+    padding: 14px 26px;
+    align-items: center;
+}
+.directionSpan{
+    color: white;
+    margin-left: 12px;
+}
+.whatsappBtn{
+    filter: drop-shadow(0px 4px 6px rgba(8, 3, 3, 0.25));
+    background-color: #0C9466;
+    border:1px solid #0C9466;
+    border-radius: 150px;
+    display: flex;
+    padding: 14px 26px;
+    align-items: center;
+
+}
+.whatsappSpan{
+    color: white;
+    margin-left: 12px;
+}
+.line{
+    color:  #EDEDED;
+}
+.salonaboutMaindiv{
+    margin: 15px 18px;
+}
+
+.profileSalonImg{
+    margin-top:8px;
+}
+.profileSalonParaDiv{
+    margin-top:13px
+}
+
+@media screen and (max-width:800px){
+    .mainDiv{
+        max-width: 100%;
+    
+    }
+}
+@media screen and (max-width:768px){
+    .mainDiv{
+        max-width: 100%;
+    
+    }
+    .profileStar{
+        position: relative;
+        flex-direction: column;
+    }
+    .profileStarSpan{
+        position: absolute;
+        top: 5px;
+        right: 12px;
+    
+    }
+}
+@media screen and (max-width:426px){
+    .directionBtn{
+        
+        padding: 12px 8px
+        ;
+
+    }
+    .directionSpan{
+        margin-left: 8px;
+        font-size: 15px;
+    }
+    .whatsappBtn{
+        padding: 12px 8px
+        ;
+    
+    }
+    .whatsappSpan{
+        color: white;
+        margin-left: 8px;
+        font-size: 15px;
+    }
+    /* .profileStarSpan{
+        padding: 4px 15px;
+      
+    } */
+}

@@ -1,0 +1,48 @@
+.AboutsUsTabComponentWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 22px;
+ 
+}
+.listing {
+  display: flex;
+  gap: 12px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.listTitle {
+  color: #000;
+  font-size: 16px;
+  font-weight: 600;
+}
+.listDescription {
+  color: #888;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+
+}
+@media (max-width: 991px) {
+  .listTitle {
+    font-size: 14px;
+  }
+  .listing {
+    gap: 6px;
+  }
+  .listDescription {
+    font-size: 12px;
+  }
+}
+@media (max-width: 768px) {
+  .listTitle {
+    font-size: 13px;
+  }
+  .listing {
+    gap: 4px;
+  }
+  .listDescription {
+    font-size: 11px;
+    line-height: 19px;
+  }
+}

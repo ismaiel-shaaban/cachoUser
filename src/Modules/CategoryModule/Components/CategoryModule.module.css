@@ -1,0 +1,46 @@
+.customUpper{
+    max-width: 1166px;
+    padding: 0 10px;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+}
+.upperHeadr{
+    background-color: rgba(68,119,157,0.3);
+    padding: 10px;
+}
+.headText {
+    font-weight: 500;
+    font-size: 16px;
+    color: #000;
+}
+.allCategories{
+    max-width: 800px;
+    width: 100%;
+    margin: 20px auto;
+    background: #FFFFFF;
+    padding: 20px 20px 70px 20px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.leftarrowBlack{
+    cursor: pointer;
+}
+.smallText {
+    font-weight: 600;
+    font-size: 15px;
+    color: #fff;
+    position: absolute;
+    bottom: 20px;
+    left: 45%;
+    transform: translateX(-50%);
+}
+.featuredCatRow{
+    cursor: pointer;
+  }

@@ -1,0 +1,22 @@
+.contact {
+  background: url(../../../../../../public/images/newImages/grow.png);
+  background-position: center;
+  background-size: cover;
+  border-radius: 8px;
+  padding: 65px 72px 59px;
+}
+.growUser li {
+  position: relative;
+  height: 37px;
+  width: 37px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+.growUser li:not(:first-child) {
+  margin-left: -10px;
+}
+@media screen and (width <= 991px) {
+  .contact {
+    padding: 20px;
+  }
+}

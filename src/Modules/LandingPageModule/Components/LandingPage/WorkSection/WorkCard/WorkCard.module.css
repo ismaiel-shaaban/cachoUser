@@ -1,0 +1,8 @@
+.WorkCard {
+  max-width: calc(50% - 10px);
+}
+@media screen and (width <= 768px) {
+  .WorkCard {
+    max-width: calc(100%);
+  }
+}
