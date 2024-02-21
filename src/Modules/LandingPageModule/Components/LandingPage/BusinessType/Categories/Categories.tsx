@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import images from "src/Assets/images";
-import styles from "./SubCategory.module.css";
+import styles from "./Categories.module.css";
 import { useRouter } from "next/router";
 import useSubCategoryQuery from "src/Modules/CategoryModule/Hooks/useSubCategoryQuery";
 
-function SubCategory() {
+function Categories() {
   return (
     <>
       <section className="subCategoriesBox bg-sky py-5">
@@ -29,4 +29,4 @@ function SubCategory() {
     </>
   );
 }
-export default SubCategory;
+export default Categories;

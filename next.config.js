@@ -3,7 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   images: {
-    domains: ["cachoo-bucket.s3.ap-south-1.amazonaws.com"],
+    domains: ["cachoo-bucket.s3.ap-south-1.amazonaws.com" , "loremflickr.com"],
   },
 };
 

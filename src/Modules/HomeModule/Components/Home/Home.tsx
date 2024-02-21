@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import images from "src/Assets/images";
-import CategoryCard from "../../../LandingPageModule/Components/LandingPage/Category/CategoryCard/CategoryCard";
+import BussinessTypeCard from "../../../LandingPageModule/Components/LandingPage/BusinessType/BussinessTypeCard/BussinessTypeCard";
 import styles from "./Home.module.css";
 
 function Home() {

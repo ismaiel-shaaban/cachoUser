@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import withProtectedRoute from "src/HOCs/withProtectedRoute";
 import useProductListQuery from "src/Modules/CategoryModule/Hooks/useProductListQuery";
 import useSubCategoryQuery from "src/Modules/CategoryModule/Hooks/useSubCategoryQuery";
-import useCategoryListQuery from "src/Modules/LandingPageModule/Hooks/useCategoryListQuery";
+import useBusinessTypeListQuery from "src/Modules/LandingPageModule/Hooks/useBusinessTypeListQuery";
 
 import Layout from "src/Modules/LayoutModule/Component/Layout/Layout";
 import ProductListingPage from "src/Modules/ProductListingPage/Components/ProductListingPage";

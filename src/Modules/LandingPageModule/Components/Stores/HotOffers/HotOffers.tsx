@@ -1,10 +1,10 @@
 import React, { Fragment, useEffect, useRef, useState } from "react";
-import styles from "./FeaturedCategories.module.css";
+import styles from "./HotOffers.module.css";
 import Image from "next/image";
 import images from "src/Assets/images";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import useFeaturedCategoryListQuery from "src/Modules/LandingPageModule/Hooks/useFeaturedCategoryListQuery";
+import useHotOffersListQuery from "src/Modules/LandingPageModule/Hooks/useHotOffersListQuery";
 import { useRouter } from "next/router";
 import {
   FILE_URL,
@@ -14,8 +14,9 @@ import {
 import { strings } from "src/Utils/Localization";
 import useAuthValue from "src/Modules/AuthModule/Hooks/useAuthValue";
 import { useElementVisibility } from "@reactuses/core";
+import {OfferModel} from "../../../../../Models/offer.model";
 
-function FeaturedCategories() {
+function HotOffers() {
   const [isArabicCustomSlider, setIsArabicCustomSlider] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
   const [visible, stop] = useElementVisibility(ref);
@@ -57,9 +58,11 @@ function FeaturedCategories() {
   const query = router?.query;
   const page = query?.page ? Number(query?.page) : 1;
 
-  const featuredCategoryListQuery = useFeaturedCategoryListQuery(page, "");
-  const featuredCategoryListData =
-    featuredCategoryListQuery?.data?.data?.data?.list ?? [];
+  const hotOffersListQuery = useHotOffersListQuery(page, "");
+  console.log(hotOffersListQuery)
+    const hotOffersListData:OfferModel[] =
+    hotOffersListQuery?.data?.docs ?? [];
+
   const { language } = useAuthValue();
   useEffect(() => {
     setIsArabicCustomSlider(language === "ar");
@@ -162,13 +165,13 @@ function FeaturedCategories() {
     <div ref={ref} className="my-10">
       <h3 className={`${styles.newStoriesHeading} text-[24px] font-[800] text-primary flex pt-[35px]`}>
         <span>
-        {strings?.featured_cat} 
+        {strings?.hot_offers}
         </span>
         <span className={`${language === "ar" ? 'mr-2'  : 'ml-2'}`}>
           {svgElement}
         </span>
       </h3>
-      {featuredCategoryListData?.length !== 0 ? (
+      {hotOffersListData?.length !== 0 ? (
         <div  className={`animate__animated ${visible ? 'animate__fadeInDownBig':''}`}>
 
         <Carousel
@@ -184,7 +187,7 @@ function FeaturedCategories() {
           showDots={false}
           {...rtlProp}
         >
-          {featuredCategoryListData?.map((item, index) => {
+          {hotOffersListData?.map((item:any, index:any) => {
             return (
               <>
                 <div
@@ -197,7 +200,7 @@ function FeaturedCategories() {
                     <Image
                       src={
                         item?.image
-                          ? `${FILE_URL}${item?.image}`
+                          ? `${item?.image}`
                           : images.featureCategory
                       }
                       alt="bannerImg"
@@ -228,4 +231,4 @@ function FeaturedCategories() {
   );
 }
 
-export default FeaturedCategories;
+export default HotOffers;

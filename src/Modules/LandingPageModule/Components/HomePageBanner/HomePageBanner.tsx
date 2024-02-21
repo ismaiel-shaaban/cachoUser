@@ -1,8 +1,9 @@
 import React from "react";
 import Banner from "../LandingPage/Banner/Banner";
 import styles from "./HomePageBanner.module.css";
-import AllCategory from "../LandingPage/AllCategory/AllCategory";
-import FeaturedCategories from "../Stores/FeaturedCategories/FeaturedCategories";
+import AllCategory from "../LandingPage/AllBusinessTypes/AllBusinessTypes";
+import HotOffers from "../Stores/HotOffers/HotOffers";
+import AllBusinessTypes from "../LandingPage/AllBusinessTypes/AllBusinessTypes";
 
 function HomePageBanner() {
   return (
@@ -10,8 +11,8 @@ function HomePageBanner() {
       <section className={`${styles.bannerSection} bg-[white] py-[30px]`}>
         <div className="main-container">
           <Banner />
-          <FeaturedCategories />
-          <AllCategory />
+          <HotOffers />
+          <AllBusinessTypes />
         </div>
       </section>
     </>

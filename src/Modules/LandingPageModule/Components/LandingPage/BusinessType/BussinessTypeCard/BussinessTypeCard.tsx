@@ -1,8 +1,8 @@
 import Image from "next/image";
 import React from "react";
-import styles from "./CategoryCard.module.css";
+import styles from "./BussinessTypeCard.module.css";
 
-function CategoryCard(props: any) {
+function BussinessTypeCard(props: any) {
   const { value } = props;
   return (
     <>
@@ -20,4 +20,4 @@ function CategoryCard(props: any) {
   );
 }
 
-export default CategoryCard;
+export default BussinessTypeCard;

@@ -2,7 +2,7 @@ import { useRouter } from "next/router";
 import React, { useState } from "react";
 import { useStateManager } from "react-select";
 import useSubCategoryQuery from "src/Modules/CategoryModule/Hooks/useSubCategoryQuery";
-import useCategoryListQuery from "src/Modules/LandingPageModule/Hooks/useCategoryListQuery";
+import useBusinessTypeListQuery from "src/Modules/LandingPageModule/Hooks/useBusinessTypeListQuery";
 import Layout from "src/Modules/LayoutModule/Component/Layout/Layout";
 import withProtectedRoute from "src/HOCs/withProtectedRoute";
 import { strings } from "src/Utils/Localization";

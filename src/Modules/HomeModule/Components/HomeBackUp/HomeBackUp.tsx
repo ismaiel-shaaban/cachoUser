@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 import Carousel from "react-multi-carousel";
 import images from "../../../../Assets/images";
-import CategoryCard from "../../../LandingPageModule/Components/LandingPage/Category/CategoryCard/CategoryCard";
+import BussinessTypeCard from "../../../LandingPageModule/Components/LandingPage/BusinessType/BussinessTypeCard/BussinessTypeCard";
 import styles from "./HomeBackUp.module.css";
 import "react-multi-carousel/lib/styles.css";
 import { strings } from "src/Utils/Localization";
@@ -162,7 +162,7 @@ function HomeBackUp() {
           {/* === carousel start ==== */}
           <Carousel responsive={responsive}>
             {categoryData?.map((val, key) => {
-              return <CategoryCard value={val} key={key} />;
+              return <BussinessTypeCard value={val} key={key} />;
             })}
           </Carousel>
           {/* === carousel end ==== */}
@@ -181,7 +181,7 @@ function HomeBackUp() {
             className={`${styles.categoryList} flex flex-wrap gap-[14px] justify-center`}
           >
             {categoryData?.map((val, key) => {
-              return <CategoryCard value={val} key={key} />;
+              return <BussinessTypeCard value={val} key={key} />;
             })}
           </div>
         </div>

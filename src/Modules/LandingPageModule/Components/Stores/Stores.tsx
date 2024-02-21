@@ -1,7 +1,7 @@
 import React from "react";
 import NewStores from "./NewStores/NewStores";
 import NearbyStores from "./NearbyStores/NearbyStores";
-import FeaturedCategories from "./FeaturedCategories/FeaturedCategories";
+import HotOffers from "./HotOffers/HotOffers";
 
 function Stores() {
   return (

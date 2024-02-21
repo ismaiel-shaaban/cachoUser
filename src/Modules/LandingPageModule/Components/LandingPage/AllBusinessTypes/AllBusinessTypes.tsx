@@ -1,8 +1,8 @@
 import React, { Fragment, useRef, useState } from "react";
-import styles from "./AllCategory.module.css";
+import styles from "./AllBusinessTypes.module.css";
 import Image from "next/image";
 import { useRouter } from "next/router";
-import useCategoryListQuery from "src/Modules/LandingPageModule/Hooks/useCategoryListQuery";
+import useBusinessTypeListQuery from "src/Modules/LandingPageModule/Hooks/useBusinessTypeListQuery";
 import {
   FILE_URL,
   convertFirstLetterToUpperCaseWithSpace,
@@ -51,9 +51,9 @@ function AllCategory() {
   const router = useRouter();
   const query = router?.query;
   const page = query?.page ? Number(query?.page) : 1;
-  const categoryListQuery = useCategoryListQuery(page, search);
-  const categoryListData = categoryListQuery?.data?.data?.data?.list ?? [];
-  const categoryList = categoryListData.slice(0, 5);
+  const businessTypesListQuery = useBusinessTypeListQuery(page, search);
+  const businessTypesListData = businessTypesListQuery?.data?.docs ?? [];
+  const businessTypesList = businessTypesListData.slice(0, 5);
   const { language } = useAuthValue();
   const animation =[
     {
@@ -74,7 +74,7 @@ function AllCategory() {
        
       <section className="subCategoriesBox py-5" ref={ref}>
         <div className="subContainer max-w-[1135px] mx-auto">
-          {categoryList?.length !== 0 ? (
+          {businessTypesList?.length !== 0 ? (
             <>
             <div  className="flex justify-between">
 
@@ -88,7 +88,7 @@ function AllCategory() {
                 className={`${styles.titleCat} text-[24px] font-[800] text-primary !mb-[1.8rem]`}
               >
                  <button
-                      onClick={() => router.push("/category")}
+                      onClick={() => router.push("/business-types")}
                       
                       type="button"
                   >
@@ -100,29 +100,29 @@ function AllCategory() {
             </div>
 
           
-              {/* categoryList */}
+              {/* businessTypesList */}
 
-              <div className={"flex flex-wrap -m-4"}>
-                {categoryList.slice(0,4)?.map((category, index) => {
+              <div className={"flex flex-wrap -m-4 "}>
+                {businessTypesList.slice(0,4)?.map((businessType, index) => {
                   
                   return (
                     <div className={`p-4 sm:w-full ssm:w-full w-1/4 animate__animated transition-transform transform hover-flip ${visible ? animation[index].class :''} `  }>
                       <div className="h-full shadow border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-                        <img className="h-48 h-36 w-full object-cover object-center"  src={`${FILE_URL}${category?.image}`}alt="blog"/>
+                        <img className="h-48 h-36 w-full object-cover object-center"  src={`${businessType?.image}`} alt="blog"/>
                         <div className="p-6">
                           <h2 className="tracking-widest  title-font font-medium text-primary mb-1">{dataLangTranslation(
                             convertFirstLetterToUpperCaseWithSpace(
-                              category?.name
+                              businessType?.name
                             ),
-                            category?.arName
+                            businessType?.nameAr
                           )}</h2>
                           <div className="flex items-center flex-wrap cursor-pointer "      onClick={() =>
                           router.push(
-                            `/category/subcategory?categoryId=${
-                              category?._id
-                            }&categoryName=${dataLangTranslation(
-                              category?.name,
-                              category?.arName
+                            `/businessType/subbusinessType?businessTypeId=${
+                              businessType?._id
+                            }&businessTypeName=${dataLangTranslation(
+                              businessType?.name,
+                              businessType?.nameAr
                             )}`
                           )
                         }>
@@ -167,14 +167,14 @@ function AllCategory() {
                     </div>
                     // <figure
                     //   className={styles.catgoriesItem}
-                    //   key={`category${index}`}
+                    //   key={`businessType${index}`}
                       // onClick={() =>
                       //   router.push(
-                      //     `/category/subcategory?categoryId=${
-                      //       category?._id
-                      //     }&categoryName=${dataLangTranslation(
-                      //       category?.name,
-                      //       category?.arName
+                      //     `/businessType/subbusinessType?businessTypeId=${
+                      //       businessType?._id
+                      //     }&businessTypeName=${dataLangTranslation(
+                      //       businessType?.name,
+                      //       businessType?.arName
                       //     )}`
                       //   )
                       // }
@@ -183,7 +183,7 @@ function AllCategory() {
                     //     className={`${styles.cenetrItem} relative h-[300px] w-[300px] rounded-[10px] overflow-hidden cursor-pointer`}
                     //   >
                     //     <Image
-                    //       src={`${FILE_URL}${category?.image}`}
+                    //       src={`${FILE_URL}${businessType?.image}`}
                     //       alt="img"
                     //       layout="fill"
                          
@@ -192,14 +192,14 @@ function AllCategory() {
                     //   <figcaption className={styles.catName}>
                     //     {dataLangTranslation(
                     //       convertFirstLetterToUpperCaseWithSpace(
-                    //         category?.name
+                    //         businessType?.name
                     //       ),
-                    //       category?.arName
+                    //       businessType?.arName
                     //     )}
                     //   </figcaption>
                     // </figure>
-                  //   <Card {...category}>
-                  //   <Card.Image  src={`${FILE_URL}${category?.image}`} height={'100px'} alt="Shoes" />
+                  //   <Card {...businessType}>
+                  //   <Card.Image  src={`${FILE_URL}${businessType?.image}`} height={'100px'} alt="Shoes" />
                   //   <Card.Body className="items-center text-center">
                   //     <Card.Title tag="h2">Shoes!</Card.Title>
                       
@@ -211,12 +211,12 @@ function AllCategory() {
                     
                   );
                 })}
-                {categoryListData?.length === 0 ? (
+                {businessTypesListData?.length === 0 ? (
                   strings?.no_cat_avl
                 ) : (""
                   // <div className={styles.categoriesItem}>
                   //   <button
-                  //     onClick={() => router.push("/category")}
+                  //     onClick={() => router.push("/businessType")}
                   //     className={`${styles.viewAll} text-white text-[14px] font-600`}
                   //     type="button"
                   //   >
